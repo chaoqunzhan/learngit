@@ -1,0 +1,32 @@
+.tv_hot {
+    width: 180px;
+}
+
+.avatar {
+    position: relative;
+}
+.tv_hot .avatar {
+    display: block;
+    height: 123px;
+    overflow: hidden;
+    width: 180px;
+}
+.tv_hot .avatar img {
+    height: 123px;
+}
+.avatar:after {
+    bottom: 0;
+    content: url("../images/bg_play.png");
+    left: 5px;
+    position: absolute;
+    z-index: 10;
+}
+.avatar:hover, .zhuti .avatar:hover, .bbsinner .avatar:hover {
+    box-shadow: 0 0 10px gray;
+}
+.avatar:hover img, .zhuti .avatar:hover img, .bbsinner .avatar:hover img {
+    transform: scale(1.3);
+    transition: all 1s ease 0s;
+	-webkit-transform: scale(1.3);
+	-webkit-transform: all 1s ease 0s;
+}
