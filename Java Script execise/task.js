@@ -53,3 +53,53 @@ function subtOnClick25(top,bottom,height)
 }
 
 
+function subtOnClick34()
+{
+	var res=4&5;
+	document.write("4&5="+res+"<br/>");
+	var res=3|6;
+	document.write("3|6="+res+"<br/>");
+	var res=3^12^3;
+	document.write("3^12^3="+res+"<br/>");
+	var res=8<<5;
+	document.write("8<<5="+res+"<br/>");
+	var res=128>>3;
+	document.write("128>>3="+res+"<br/>");
+	var res=-128>>>2;
+	document.write("-128>>>2="+res+"<br/>");
+}
+
+
+//***********************3.5其他运算符***********************//
+function Circle(r)
+{
+	this.radius=r;
+}
+
+function Rectangle(a,b)
+{
+	this.sideA=a;
+	this.sideB=b;
+}
+
+function computerArea(obj)
+{
+	var area;
+	if(obj instanceof Circle)
+	{
+		var typeStr=typeof obj;
+		document.write("<br/>typeof obj="+typeStr);
+		document.write("<br/>obj是圆形对象的实例，半径为："+obj.radius);
+		area=3.14*obj.radius*obj.radius;
+		document.write("<br/>这圆形的面积是："+area);
+	}
+	else if(obj instanceof Rectangle)
+	{
+		var typeStr=typeof obj;
+		document.write("<br/>typeof obj="+typeStr);
+		document.write("<br/>obj是矩形对象的实例，长为："+obj.sideA+"宽为："+obj.sideB);
+		area=sideA*sideB;
+		document.write("<br/>这个矩形的面积是："+area);
+	}
+	return area;
+}
