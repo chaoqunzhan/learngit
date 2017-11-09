@@ -103,3 +103,53 @@ function computerArea(obj)
 	}
 	return area;
 }
+
+function isRunYear()
+{   var year,boo;
+	year=eval(document.getElementById('year')).value;
+	if(year%400==0) 
+		{boo=true;}
+	else if(year%4==0&&year%100!=0)
+		{boo=true;}
+	else 
+		{boo=false;}
+	return boo;
+}
+
+function dayNum()
+{
+	var month,num,year;
+	boo=isRunYear();
+	year=eval(document.getElementById('year')).value;y=parseInt("year1");
+	alert(typeof y+y);
+	// switch(month)
+	// {
+	// 	case 1: 
+	// 	case 3: 
+	// 	case 5: 
+	// 	case 7: 
+	// 	case 8: 
+	// 	case 10: 
+	// 	case 12:
+	// 		num=31;
+	// 		break;
+	// 	case 4: 
+	// 	case 6: 
+	// 	case 9: 
+	// 	case 11: 
+	// 		num=30;
+	// 		break;
+	// 	case 2:
+	// 		if(boo)
+	// 			{
+	// 			    num=29;
+	// 			}	
+	// 		else {num=28;}
+	// }
+	// if(boo)
+	// 	alert(year+"是:"+"闰年"+'\n'+month+"月的天数是:"+num+"天");
+	// else
+	// {
+	// 	alert(year+"不是:"+"闰年"+'\n'+month+"月的天数是:"+num+"天");
+	// }
+}
