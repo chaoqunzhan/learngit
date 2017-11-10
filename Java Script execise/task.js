@@ -209,5 +209,8 @@ function printFib()
 		alert('请重新输入正整数！！！')
 	}	
 
-	
+	// for(variable in document)
+	// {
+	// 	document.write(variable+"<br/>");
+	// }
 }
