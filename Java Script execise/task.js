@@ -120,36 +120,94 @@ function dayNum()
 {
 	var month,num,year;
 	boo=isRunYear();
-	year=eval(document.getElementById('year')).value;y=parseInt("year1");
-	alert(typeof y+y);
-	// switch(month)
-	// {
-	// 	case 1: 
-	// 	case 3: 
-	// 	case 5: 
-	// 	case 7: 
-	// 	case 8: 
-	// 	case 10: 
-	// 	case 12:
-	// 		num=31;
-	// 		break;
-	// 	case 4: 
-	// 	case 6: 
-	// 	case 9: 
-	// 	case 11: 
-	// 		num=30;
-	// 		break;
-	// 	case 2:
-	// 		if(boo)
-	// 			{
-	// 			    num=29;
-	// 			}	
-	// 		else {num=28;}
-	// }
-	// if(boo)
-	// 	alert(year+"是:"+"闰年"+'\n'+month+"月的天数是:"+num+"天");
-	// else
-	// {
-	// 	alert(year+"不是:"+"闰年"+'\n'+month+"月的天数是:"+num+"天");
-	// }
+	year=eval(document.getElementById('year')).value;
+	month=eval(document.getElementById('month')).value;
+	switch(month)
+	{
+		case '1':
+		case '3': 
+		case '5': 
+		case '7': 
+		case '8': 
+		case '10': 
+		case '12':
+			num=31;
+			break;
+		case '4': 
+		case '6': 
+		case '9': 
+		case '11': 
+			num=30;
+			break;
+		case '2':
+			if(boo)
+				{
+				    num=29;
+				}	
+			else {num=28;}
+	}
+	if(boo)
+		alert(year+"是:"+"闰年"+'\n'+month+"月的天数是:"+num+"天");
+	else
+	{
+		alert(year+"不是:"+"闰年"+'\n'+month+"月的天数是:"+num+"天");
+	}
+}
+
+
+/********************************斐波那契数列*****************************************/
+function fibSum()
+{
+	var n,sum=0;
+	var f1=0;f2=1,i=3;
+	n=eval(document.getElementById('n')).value;
+	if(n==1)
+	{sum=0;}
+	else if(n==2)
+	{sum=1;}
+	else if(n>=3)
+	{
+		while(i<=n)
+		{
+			fn=f1+f2;
+			sum=sum+fn;
+			f1=f2;
+			f2=fn;
+			i++;
+		}
+		sum=sum+1;
+	}
+	else{sum=-1;}
+
+	if(sum==-1)
+		{alert('请重新输入正整数1！！！'+sum)}
+	else
+		{
+		document.write("斐波那契数列的前"+n+"项和是:"+sum);
+		}
+}
+
+function printFib()
+{
+	var n1;
+	n1=eval(document.getElementById('n1')).value;
+	if(n1>=0)
+	{
+		var f1=0,f2=1,fn=0;
+		document.write('斐波那契数列的前n项如下:<br/>')
+		for(i=1;i<=n1;i++)
+		{
+			document.write(fn);
+			f1=f2;
+			f2=fn;
+			fn=f1+f2;
+			document.write("<br/>");	
+		}
+	}
+	else
+	{
+		alert('请重新输入正整数！！！')
+	}	
+
+	
 }
