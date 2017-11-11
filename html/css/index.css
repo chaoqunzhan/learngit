@@ -1,0 +1,761 @@
+@charset"utf-8";
+/*---------------------------样式归零 By 天涯浅唱 QQ：122452357----------------------*/
+abbr,address,article,aside,audio,b,blockquote,body,canvas,caption,cite,code,dd,
+del,details,dfn,div,dl,dt,em,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,
+h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,
+ol,p,pre,q,samp,section,small,span,strong,sub,summary,sup,table,tbody,td,tfoot,th,
+thead,time,tr,ul,var,video
+{margin:0;padding:0;border:0;outline:0;font-size:50%;background:0 0;font-weight:400;
+  font-style:inherit;font-family:inherit;vertical-align:top}
+
+  body{line-height:1;color:#000;background:#fff;font-size:12px;font-family:'simsun'}
+  article,aside,details,figcaption,figure,footer,header,hgroup,hr,menu,nav,
+  section{display:block}
+  nav ul,ol,ul{list-style:none}:focus,
+  a{outline:0}a{margin:0;font-size:100 %;
+    vertical-align:baseline;background:0 0;
+    blr:expression(this.onFocus=this.blur())}a,
+    ins{text-decoration:none}a,hr{padding:0}ins,
+    mark{background-color:#ff9;color:#000}
+    mark{font-style:italic;font-weight:700}
+    blockquote,q{quotes:none}blockquote:after,
+    blockquote:before,q:after,q:before{content:'';content:none}
+    del{text-decoration:line-through}abbr[title],
+    dfn[title]{border-bottom:1px dotted;cursor:help}
+    table{border-collapse:collapse;border-spacing:0}
+    caption,td,th{text-align:left;font-weight:400}
+    hr{height:1px;border:0;border-top:1px solid #cccccc;margin:1em 0}
+    input,select{vertical-align:middle;border:0} 
+/*-------------------------归零样式END，请于样式表最前面调用-------------------------*/
+/**************************************pc版***********************************************/
+/****************************************导航栏****************************************************、*/
+@media screen and (min-width:680px){
+*{
+  margin:0;padding:0;
+}
+
+.title{
+  width:100%;
+  height:100px;
+}
+
+.btx{
+  width:100%;
+  height:
+  margin:0 auto;
+}
+.btx li {padding:20px 20px; 
+  list-style-type : none;    
+  float   : left;                    
+}
+
+a  {
+  font-size : 20px;
+  text-decoration : none;
+  position        : relative;
+  top   : 0;
+  color : #FFF;     
+  transition : all .4s;
+}
+
+li:hover a {
+  top   : -20px;
+  color : #4eacff;
+  background-color: #808080;
+  box-shadow : 0 0 5px 0 rgba(255, 255, 255, 0.7);
+  transition : all .4s;
+}
+
+
+
+#one{               
+                background: url(../images/index-bg.jpg) center;
+                background-repeat:no-repeat;
+                background-attachment:fixed;
+                width: 100%;
+                height:2600px;               
+}
+
+.container{
+  width:860px;
+  margin:0 auto;
+  background:url(../1.jpg);
+  background-repeat:no-repeat
+}
+.container1{
+  width:791px;
+  margin:0 auto;
+  /*border:15px solid #ced9e3;*/
+  
+}
+
+#zhanshi{
+  width:538px;height:361px;float:left;
+  background:url(../images/33.jpg);
+  background-size:cover;
+}
+
+.trip li{
+  float:left;
+  list-style-type : none; 
+  margin:30px 21px;
+  width:150px;
+  height:90px;
+  
+}
+
+/*--------------------------翻转图片样式表------------------------------------------------*/
+.he_3DFlipY{display:block;width:253px;height:361px;overflow:hidden;padding:0;margin:0;border:0;position:relative;box-sizing:border-box;cursor:pointer;-webkit-perspective:1700px;
+  -moz-perspective:1700px;perspective:1700px;-webkit-perspective-origin:50% 50%;-moz-perspective-origin:50% 50%;perspective-origin:50% 50%}
+.he_3DFlipY_inner{width:100%;height:100%;padding:0;margin:0;position:relative;-webkit-transform-style:preserve-3d;-moz-transform-style:preserve-3d;transform-style:preserve-3d}
+.he_3DFlipY_inner > div.he_3DFlipY_img{backface-visibility:hidden;-webkit-transition:all .5s ease-in-out;-moz-transition:all .5s ease-in-out;transition:all .5s ease-in-out}
+.he_3DFlipY_inner:hover > div.he_3DFlipY_img{-webkit-transform:rotateY(180deg);-moz-transform:rotateY(180deg);transform:rotateY(180deg)}
+.he_3DFlipY_inner > div img{max-width:100%;padding:0;margin:0;display:block;position:relative}
+.he_3DFlipY_caption{position:absolute;top:0;left:0;padding:0;background:#fe7253;color:#fff;height:100%;width:100%;padding:0;margin:0;opacity:0;background-color:#fe7253;
+  text-align:center;backface-visibility:hidden;-webkit-transform:rotateY(-180deg);-moz-transform:rotateY(-180deg);transform:rotateY(-180deg);
+  -webkit-transition:all .5s ease-in-out;-moz-transition:all .5s ease-in-out;transition:all .5s ease-in-out}
+.he_3DFlipY_inner:hover .he_3DFlipY_caption{opacity:1;-webkit-transform:rotateY(0);-moz-transform:rotateY(0);transform:rotateY(0)}
+.he_3DFlipY_caption h3{font-size:1.3em;font-weight:700;text-align:center;width:100%;position:absolute;top:25%;left:5px;margin:0;padding:0;color:#fff}
+.he_3DFlipY_caption p{font-size:1em;text-align:center;width:100%;position:absolute;top:45%;left:5px;margin:0;padding:0;color:#fff}
+.he_3DFlipY a{position:absolute;top:0;left:0;width:100%;height:100%;padding:0;margin:0}
+
+/***************************************波浪图片切换********************、？、*/
+#parent {
+  width: 681px;
+  height: 384px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto auto;
+  overflow: hidden;
+  position: relative;
+  -webkit-box-shadow: 0 0 88px 5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0 0 88px 5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 0 88px 5px rgba(0, 0, 0, 0.75);
+}
+
+svg {
+  position: absolute;
+  z-index: 1;
+  width: 681px;
+  height: 384px;
+}
+
+button {
+  position: absolute;
+  z-index: 50;
+  width: 40px;
+  overflow: hidden;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 88px 5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0 0 88px 5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 0 88px 5px rgba(0, 0, 0, 0.75);
+}
+button:focus {
+  outline-width: 0;
+}
+
+circle {
+  stroke: #fff;
+  fill: none;
+  transition: 0.3s;
+}
+
+#svg1 circle {
+  transition-timing-function: linear;
+}
+
+#svg2 circle {
+  transition-timing-function: linear;
+}
+
+#Capa_1 {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  transform: translate(-7px, -8px);
+}
+
+#Capa_2 {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  transform: translate(-9px, -8px);
+}
+
+#right {
+  margin-left: 628px;
+  margin-top: 168px;
+  border: 1px solid #849494;
+  background-color: transparent;
+  transition: .5s;
+}
+#right:hover {
+  background-color: #fff;
+}
+
+#left {
+  margin-left: 0.5%;
+  margin-top: 6.17%;
+  border: 1px solid #849494;
+  background-color: transparent;
+  transition: .5s;
+}
+#left:hover {
+  background-color: #fff;
+}
+
+.circle1 {
+  transition-delay: 0.05s;
+}
+
+.circle2 {
+  transition-delay: 0.1s;
+}
+
+.circle3 {
+  transition-delay: 0.15s;
+}
+
+.circle4 {
+  transition-delay: 0.2s;
+}
+
+.circle5 {
+  transition-delay: 0.25s;
+}
+
+.circle6 {
+  transition-delay: 0.3s;
+}
+
+.circle7 {
+  transition-delay: 0.35s;
+}
+
+.circle8 {
+  transition-delay: 0.4s;
+}
+
+.circle9 {
+  transition-delay: 0.45s;
+}
+
+.circle10 {
+  transition-delay: 0.05s;
+}
+
+.circle11 {
+  transition-delay: 0.1s;
+}
+
+.circle12 {
+  transition-delay: 0.15s;
+}
+
+.circle13 {
+  transition-delay: 0.2s;
+}
+
+.circle14 {
+  transition-delay: 0.25s;
+}
+
+.circle15 {
+  transition-delay: 0.3s;
+}
+
+.circle16 {
+  transition-delay: 0.35s;
+}
+
+.circle17 {
+  transition-delay: 0.4s;
+}
+
+.circle18 {
+  transition-delay: 0.45s;
+}
+
+.slide1 {
+  background-image: url("https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/c.jpg");
+}
+
+.slide2 {
+  background-image: url("https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/S%20Romos.jpg");
+}
+
+.slide3 {
+  background-image: url("https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/bale.jpg");
+}
+
+.slide4 {
+  background-image: url("https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/Toni%20Kroos.jpg");
+}
+
+.slider {
+  position: absolute;
+  width: 400%;
+  height: 100%;
+  background: #000;
+  display: inline-flex;
+  overflow: hidden;
+}
+
+.slide1,
+.slide2,
+.slide3,
+.slide4 {
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  font-size: 62px;
+  padding-top: 0px;
+  font-weight: 800;
+  font-family: 'Heebo', sans-serif;
+  text-align: center;
+  width: 25%;
+  height: 100%;
+  z-index: 10;
+  transition: 1.4s;
+}
+
+.tran {
+  transform: scale(1.3);
+}
+
+.up1 {
+  z-index: 20;
+}
+
+.up2 {
+  z-index: 40;
+}
+
+.steap {
+  stroke-width: 0;
+}
+
+.streak {
+  stroke-width: 82px;
+}
+
+#libai{
+  width:300px;
+  height:168px;
+  -webkit-box-shadow: 0 0 88px 5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0 0 88px 5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 0 88px 5px rgba(0, 0, 0, 0.75);
+}
+
+
+/***********************************鼠标经过放大*****************************/
+.tv_hot {
+    width: 180px;
+}
+
+.avatar {
+    position: relative;
+}
+.tv_hot .avatar {
+    display: block;
+    height: 123px;
+    overflow: hidden;
+    width: 180px;
+}
+.tv_hot .avatar img {
+    height: 123px;
+}
+.avatar:after {
+    bottom: 0;
+    content: url("../images/bg_play.png");
+    left: 5px;
+    position: absolute;
+    z-index: 10;
+}
+.avatar:hover, .zhuti .avatar:hover, .bbsinner .avatar:hover {
+    box-shadow: 0 0 10px gray;
+}
+.avatar:hover img, .zhuti .avatar:hover img, .bbsinner .avatar:hover img {
+    transform: scale(1.3);
+    transition: all 1s ease 0s;
+  -webkit-transform: scale(1.3);
+  -webkit-transform: all 1s ease 0s;
+}
+
+
+
+}
+
+
+
+/***************************移动端*******************************************************/
+
+
+
+@media screen and (max-width:480px){
+*{
+  margin:0;padding:0;
+}
+
+.title{
+  width:100%;
+  height:100px;
+}
+
+.btx{
+  width:350px;
+  height:120px;
+  margin:0 auto;
+}
+.btx li {padding:20px 20px; 
+  list-style-type : none;    
+  float   : left;                    
+}
+
+a  {
+  font-size : 20px;
+  text-decoration : none;
+  position        : relative;
+  top   : 0;
+  color : #FFF;     
+  transition : all .4s;
+}
+
+li:hover a {
+  top   : -20px;
+  color : #4eacff;
+  background-color: #808080;
+  box-shadow : 0 0 5px 0 rgba(255, 255, 255, 0.7);
+  transition : all .4s;
+}
+
+
+
+/*#one{               
+                background: url(../images/index-bg.jpg) center;
+                background-repeat:no-repeat;
+                background-attachment:fixed;
+                width: 100%;
+                height:2600px;               
+}*/
+.container{
+  width:100%;
+  margin:0 auto;
+  background:url(../1.jpg);
+  background-size:cover;
+  background-repeat:no-repeat
+}
+.container1{
+  width:90%;
+  margin:0 auto;
+  /*border:15px solid #ced9e3;*/
+  
+}
+
+#zhanshi{
+  width:350px;height:235px;
+  background:url(../images/33.jpg);
+  background-size:cover;
+}
+
+.trip li{
+  float:left;
+  list-style-type : none; 
+  margin:30px 21px;
+  width:150px;
+  height:90px;
+  
+}
+
+/*--------------------------翻转图片样式表------------------------------------------------*/
+.he_3DFlipY{display:block;width:253px;height:361px;overflow:hidden;padding:0;margin:0;border:0;position:relative;box-sizing:border-box;cursor:pointer;-webkit-perspective:1700px;
+  -moz-perspective:1700px;perspective:1700px;-webkit-perspective-origin:50% 50%;-moz-perspective-origin:50% 50%;perspective-origin:50% 50%}
+.he_3DFlipY_inner{width:100%;height:100%;padding:0;margin:0;position:relative;-webkit-transform-style:preserve-3d;-moz-transform-style:preserve-3d;transform-style:preserve-3d}
+.he_3DFlipY_inner > div.he_3DFlipY_img{backface-visibility:hidden;-webkit-transition:all .5s ease-in-out;-moz-transition:all .5s ease-in-out;transition:all .5s ease-in-out}
+.he_3DFlipY_inner:hover > div.he_3DFlipY_img{-webkit-transform:rotateY(180deg);-moz-transform:rotateY(180deg);transform:rotateY(180deg)}
+.he_3DFlipY_inner > div img{max-width:100%;padding:0;margin:0;display:block;position:relative}
+.he_3DFlipY_caption{position:absolute;top:0;left:0;padding:0;background:#fe7253;color:#fff;height:100%;width:100%;padding:0;margin:0;opacity:0;background-color:#fe7253;
+  text-align:center;backface-visibility:hidden;-webkit-transform:rotateY(-180deg);-moz-transform:rotateY(-180deg);transform:rotateY(-180deg);
+  -webkit-transition:all .5s ease-in-out;-moz-transition:all .5s ease-in-out;transition:all .5s ease-in-out}
+.he_3DFlipY_inner:hover .he_3DFlipY_caption{opacity:1;-webkit-transform:rotateY(0);-moz-transform:rotateY(0);transform:rotateY(0)}
+.he_3DFlipY_caption h3{font-size:1.3em;font-weight:700;text-align:center;width:100%;position:absolute;top:25%;left:5px;margin:0;padding:0;color:#fff}
+.he_3DFlipY_caption p{font-size:1em;text-align:center;width:100%;position:absolute;top:45%;left:5px;margin:0;padding:0;color:#fff}
+.he_3DFlipY a{position:absolute;top:0;left:0;width:100%;height:100%;padding:0;margin:0}
+
+/***************************************波浪图片切换********************、？、*/
+#parent {
+  width: 681px;
+  height: 384px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto auto;
+  overflow: hidden;
+  position: relative;
+  -webkit-box-shadow: 0 0 88px 5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0 0 88px 5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 0 88px 5px rgba(0, 0, 0, 0.75);
+}
+
+svg {
+  position: absolute;
+  z-index: 1;
+  width: 681px;
+  height: 384px;
+}
+
+button {
+  position: absolute;
+  z-index: 50;
+  width: 40px;
+  overflow: hidden;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 88px 5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0 0 88px 5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 0 88px 5px rgba(0, 0, 0, 0.75);
+}
+button:focus {
+  outline-width: 0;
+}
+
+circle {
+  stroke: #fff;
+  fill: none;
+  transition: 0.3s;
+}
+
+#svg1 circle {
+  transition-timing-function: linear;
+}
+
+#svg2 circle {
+  transition-timing-function: linear;
+}
+
+#Capa_1 {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  transform: translate(-7px, -8px);
+}
+
+#Capa_2 {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  transform: translate(-9px, -8px);
+}
+
+#right {
+  margin-left: 628px;
+  margin-top: 168px;
+  border: 1px solid #849494;
+  background-color: transparent;
+  transition: .5s;
+}
+#right:hover {
+  background-color: #fff;
+}
+
+#left {
+  margin-left: 0.5%;
+  margin-top: 6.17%;
+  border: 1px solid #849494;
+  background-color: transparent;
+  transition: .5s;
+}
+#left:hover {
+  background-color: #fff;
+}
+
+.circle1 {
+  transition-delay: 0.05s;
+}
+
+.circle2 {
+  transition-delay: 0.1s;
+}
+
+.circle3 {
+  transition-delay: 0.15s;
+}
+
+.circle4 {
+  transition-delay: 0.2s;
+}
+
+.circle5 {
+  transition-delay: 0.25s;
+}
+
+.circle6 {
+  transition-delay: 0.3s;
+}
+
+.circle7 {
+  transition-delay: 0.35s;
+}
+
+.circle8 {
+  transition-delay: 0.4s;
+}
+
+.circle9 {
+  transition-delay: 0.45s;
+}
+
+.circle10 {
+  transition-delay: 0.05s;
+}
+
+.circle11 {
+  transition-delay: 0.1s;
+}
+
+.circle12 {
+  transition-delay: 0.15s;
+}
+
+.circle13 {
+  transition-delay: 0.2s;
+}
+
+.circle14 {
+  transition-delay: 0.25s;
+}
+
+.circle15 {
+  transition-delay: 0.3s;
+}
+
+.circle16 {
+  transition-delay: 0.35s;
+}
+
+.circle17 {
+  transition-delay: 0.4s;
+}
+
+.circle18 {
+  transition-delay: 0.45s;
+}
+
+.slide1 {
+  background-image: url("https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/c.jpg");
+}
+
+.slide2 {
+  background-image: url("https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/S%20Romos.jpg");
+}
+
+.slide3 {
+  background-image: url("https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/bale.jpg");
+}
+
+.slide4 {
+  background-image: url("https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/Toni%20Kroos.jpg");
+}
+
+.slider {
+  position: absolute;
+  width: 400%;
+  height: 100%;
+  background: #000;
+  display: inline-flex;
+  overflow: hidden;
+}
+
+.slide1,
+.slide2,
+.slide3,
+.slide4 {
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  font-size: 62px;
+  padding-top: 0px;
+  font-weight: 800;
+  font-family: 'Heebo', sans-serif;
+  text-align: center;
+  width: 25%;
+  height: 100%;
+  z-index: 10;
+  transition: 1.4s;
+}
+
+.tran {
+  transform: scale(1.3);
+}
+
+.up1 {
+  z-index: 20;
+}
+
+.up2 {
+  z-index: 40;
+}
+
+.steap {
+  stroke-width: 0;
+}
+
+.streak {
+  stroke-width: 82px;
+}
+
+#libai{
+  width:300px;
+  height:168px;
+  -webkit-box-shadow: 0 0 88px 5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0 0 88px 5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 0 88px 5px rgba(0, 0, 0, 0.75);
+}
+
+
+.tv_hot {
+    width: 180px;
+}
+
+.avatar {
+    position: relative;
+}
+.tv_hot .avatar {
+    display: block;
+    height: 123px;
+    overflow: hidden;
+    width: 180px;
+}
+.tv_hot .avatar img {
+    height: 123px;
+}
+.avatar:after {
+    bottom: 0;
+    content: url("../images/bg_play.png");
+    left: 5px;
+    position: absolute;
+    z-index: 10;
+}
+.avatar:hover, .zhuti .avatar:hover, .bbsinner .avatar:hover {
+    box-shadow: 0 0 10px gray;
+}
+.avatar:hover img, .zhuti .avatar:hover img, .bbsinner .avatar:hover img {
+    transform: scale(1.3);
+    transition: all 1s ease 0s;
+  -webkit-transform: scale(1.3);
+  -webkit-transform: all 1s ease 0s;
+}
+
+}
