@@ -81,7 +81,7 @@ li:hover a {
 .container{
   width:860px;
   margin:0 auto;
-  background:url(../1.jpg);
+  background:url(https://raw.githubusercontent.com/chaoqunzhan/learngit/master/html/1.jpg);
   background-repeat:no-repeat
 }
 .container1{
@@ -451,7 +451,7 @@ li:hover a {
 .container{
   width:860px;
   margin:0 auto;
-  background:url(../2.jpg);
+  background:url(https://raw.githubusercontent.com/chaoqunzhan/learngit/master/html/2.jpg);
   background-repeat:no-repeat
 }
 .container1{
