@@ -1,0 +1,61 @@
+*{
+	margin:0;padding:0;
+}
+
+body{
+	font-size:12px;
+}
+
+a{
+	display: block;
+	color:#666;
+	width:80px;
+	text-align:center;
+	text-decoration: none;
+}
+
+a:hover {
+	color:#FFF;
+	background:#43a4fd;
+}
+
+
+/*主菜单样式*/
+#nav{
+	line-height:24px;
+	list-style-type:none;
+	background:#666;
+	margin:100px 100px;
+
+}
+
+#nav li{
+	float:left;
+	width:80px;
+	background:#CCC;
+	border:1px solid #FFF;
+ -webkit-box-shadow: 3px 3px 5px #ced9e3;
+  -moz-box-shadow: 3px 3px 5px #ced9e3;
+}
+
+#nav li ul{
+	line-height:24px;
+	position:absolute;
+	left:-1000px;
+	list-style-type:none;
+	text-align:left;
+	width:80px;
+}
+
+#nav li ul li{
+	background:#bfdffd;
+}
+
+#nav li ul li a{
+	width:80px;
+	text-align:center;
+	padding-left:0px;
+}
+#nav li.mouseover ul{
+	left:auto;
+}

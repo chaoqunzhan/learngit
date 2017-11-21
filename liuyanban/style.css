@@ -1,0 +1,29 @@
+
+    #comments{  
+        margin:10px auto;  
+    }  
+    #post{  
+        margin-top:10px;  
+    }  
+    #comments p,  
+    #post p{  
+        line-height:30px;  
+    }  
+    #comments p span{  
+        margin:4px;  
+        color:#bdb8b8;  
+    }  
+    #message{  
+        position: absolute;  
+        top: 40%;  
+        left: 100px;  
+        width: 200px;  
+        height: 50px;  
+        background: #f2f2f2;  
+        border: 1px solid;  
+        border-radius: 3px;  
+        line-height: 50px;  
+        text-align: center;  
+        display: none;  
+    }  
+</style>  

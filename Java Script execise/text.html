@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC>
+<html>
+<head>
+<meta charset="utf-8">
+<style type="text/css">
+*{
+	margin:0;padding:0;
+}
+
+body{
+	font-size:12px;
+}
+
+a{
+	display: block;
+	color:#666;
+	width:80px;
+	text-align:center;
+	text-decoration: none;
+}
+
+a:hover {
+	color:#FFF;
+	background:#C00;
+}
+
+
+/*主菜单样式*/
+.nav{
+	line-height:24px;
+	list-style-type:none;
+	background:#666;
+	margin-left:100px;
+}
+.nav1{
+	line-height:24px;
+	list-style-type:none;
+	background:#666;
+	margin-left:100px;
+}
+.nav li{
+	float:left;
+	width:80px;
+	background:#CCC;
+}
+.nav1 li{
+	float:left;
+	width:80px;
+	background:#CCC;
+}
+.nav li ul{
+	line-height:24px;
+	position:absolute;
+	left:-1000px;
+	list-style-type:none;
+	text-align:left;
+	width:80px;
+}
+.nav1 li ul{
+	line-height:24px;
+	position:absolute;
+	list-style-type:none;
+	text-align:left;
+	width:80px;
+	left:auto;
+}
+
+
+.nav li ul li{
+	background:#F6F6F6;
+}
+
+.nav li ul li a{
+	width:80px;
+	text-align:left;
+	padding-left:15px;
+}
+.nav1 li ul li{
+	background:#F6F6F6;
+}
+
+.nav1 li ul li a{
+	width:80px;
+	text-align:left;
+	padding-left:15px;
+}
+</style>
+<title>下拉菜单特效</title>
+</head>
+<body>
+<ul class="nav" onMouseOver="this.className='nav1'" onMouseOut="this.className='nav'">
+		<li><a>菜单项A</a>
+    		<ul>
+				<li><a href="菜单页面的地址">菜单项A1</a></li>
+				<li><a href="菜单页面的地址">菜单项A2</a></li>
+				<li><a href="菜单页面的地址">菜单项A3</a></li>
+				<li><a href="菜单页面的地址">菜单项A4</a></li>
+    		</ul>
+		</li>
+</ul>
+</body>
+</html>
