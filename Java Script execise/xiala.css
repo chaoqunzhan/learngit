@@ -34,15 +34,15 @@ a:hover {
 	width:80px;
 	background:#CCC;
 	border:1px solid #FFF;
- -webkit-box-shadow: 3px 3px 5px #ced9e3;
+ -webkit-box-shadow: 3px 3px 5px #ced9e3; //设置背景阴影
   -moz-box-shadow: 3px 3px 5px #ced9e3;
 }
 
 #nav li ul{
 	line-height:24px;
 	position:absolute;
-	left:-1000px;
-	list-style-type:none;
+	left:-1000px;                //把ul的起始位置设为-1000，
+	list-style-type:none;   //用于开始鼠标没经过的时，隐藏子目录
 	text-align:left;
 	width:80px;
 }
@@ -57,5 +57,5 @@ a:hover {
 	padding-left:0px;
 }
 #nav li.mouseover ul{
-	left:auto;
+	left:auto;          //当鼠标经过时，把ul设为正常值，显示子目录
 }
