@@ -33,7 +33,14 @@ li:hover a {
   background-repeat:no-repeat;
   background-attachment:fixed;
   width: 100%;
-  height:1700px;               
+  height:1900px;               
+}
+
+.con{
+  width:990px;
+  margin:0 auto;
+  height:1700px;
+  background-color:white;
 }
 
 .container{
@@ -267,7 +274,7 @@ a,img{
 }
 
 .btx{
-  width:350px;
+  width:90%;
   height:120px;
   margin:0 auto;
 }

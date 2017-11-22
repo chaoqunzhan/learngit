@@ -1,0 +1,15 @@
+#one{               
+  background: url(../images/index-bg.jpg) center;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  width: 100%; 
+  padding:50px;              
+}
+
+.anniu{
+	width:200px;
+	height:50px;
+	margin:0 auto;
+	border:1px solid #fff;
+}
+a{text-decoration:none}
