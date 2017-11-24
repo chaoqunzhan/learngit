@@ -31,20 +31,12 @@ function printCalendar(year,month){
 
 
 //创建一个打印日期的数组
-<<<<<<< HEAD:Java Script execise/JavaScript动态网页教程/20171123/print_the_calendar.js
 	var dayArray=new Array(week+numOfMonth);      //打印空格，使得星期和日期能够对应
-=======
-	var dayArray=new Array(week+numOfMonth);
->>>>>>> 76a68f8a81978fc526976020a245909231fb0ac7:Java Script execise/JavaScript动态网页教程/print_the_calendar.js
 	for(var i=0;i<week;i++){
 		dayArray[i]="";
 	}
 
-<<<<<<< HEAD:Java Script execise/JavaScript动态网页教程/20171123/print_the_calendar.js
 	for(var i=week,j=1;i<dayArray.length;i++,j++){     //打印相应的日期
-=======
-	for(var i=week,j=1;i<dayArray.length;i++,j++){
->>>>>>> 76a68f8a81978fc526976020a245909231fb0ac7:Java Script execise/JavaScript动态网页教程/print_the_calendar.js
 		dayArray[i]=""+j;
 	}
 
@@ -52,11 +44,7 @@ function printCalendar(year,month){
 	document.write("<table>");
 	document.write("<tr><th colspan=7>"+year+"年"+(month+1)+"月</th></tr>");
 	document.write("<tr><th>日</th><th>一</th><th>二</th><th>三</th><th>四</th><th>五</th><th>六</th></tr>");
-<<<<<<< HEAD:Java Script execise/JavaScript动态网页教程/20171123/print_the_calendar.js
 	for(var i=0;i<dayArray.length;i+=7)            //i+=7等价于i=i+7,i+=7可以自动转换成左边的数值类型
-=======
-	for(var i=0;i<dayArray.length;i+=7)
->>>>>>> 76a68f8a81978fc526976020a245909231fb0ac7:Java Script execise/JavaScript动态网页教程/print_the_calendar.js
 		{
 			document.write("<tr>");
 			for(var j=i;j<dayArray.length&&j<i+7;j++){
