@@ -22,7 +22,7 @@ function printCalendar(year,month){
 	else if(month==3||month==5||month==8||month==10){
 		numOfMonth=30;
 	}
-	else if(isBissextile()){
+	else if(isBissextile(year)){
 		numOfMonth=29;
 	}
 	else{
