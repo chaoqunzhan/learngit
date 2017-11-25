@@ -57,20 +57,21 @@ function calAllDay(year,month,day,currYear,currMonth,currDay){
 		}
 
 		if(day<currDay){
-			allDay=allDay+(currDay-day)+1;
+			allDay=allDay+(currDay-day);
 		}
 		else{
-			allDay=allDay-(day-currDay)+1;
+			allDay=allDay-(day-currDay);
 		}
 	}
 	else{
-		allDay=allDay-day;
+		allDay=allDay-day+currDay;
+		// alert(currMonth);
 		month=month-1;
-		for(month;month=<currMonth;month--){	
+		for(month;month>currMonth-1;month--){	
 			allDay=allDay-numofmonth(month);
 		}
-		allDay=allDay+currDay;
 	}
+	allDay=allDay+1;
 	document.write(allDay);	
 		
 }
