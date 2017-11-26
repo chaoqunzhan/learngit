@@ -1,5 +1,60 @@
+
+body{
+	width:360px;
+	margin:0 auto;
+}
 .contain{
 	height:640px;
 	width:360px;
+	margin:0 auto;
 	border:1px solid #808080;
+	/*background-image:url(https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/calculate_day1.jpg);*/
+}
+
+.text1{
+	width:100%;
+	height:220px;
+	border:1px solid #808080;
+}
+.text10{
+	height:50px;
+	margin:0 auto;
+	font-family:"Microsoft YaHei";font-size:25px;color:#fff;
+	text-align:center;
+}.text11{
+	width:50%;
+	height:20px;
+	/*border:1px solid #808080;*/
+	margin:0 auto;
+	font-family:"Microsoft YaHei";font-size:16px;color:#808080;
+	text-align:center;
+}
+.text12{
+	width:50%;
+	height:30px;
+	/*border:1px solid #808080;*/
+	margin:0 auto;
+	font-family:"STXingkai";font-size:30px;color:#fff;
+	text-align:center;
+}
+.text2{
+	width:100%;
+	height:200px;
+	border:1px solid #80ff80;
+	font-family:"STXingkai";
+	font-size:25px;
+	color:#fff;
+	text-align:center;
+}
+.text3{
+	width:100%;
+	height:200px;
+	border:1px solid #8da080;
+}
+
+.but1{
+	width:60px;
+}
+.but2{
+	width:30px;
 }

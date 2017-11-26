@@ -1,0 +1,133 @@
+// 判断是否是闰年
+function isBissextile(year)
+{
+	var year;
+	var Bissextile=false;
+	if(year%4==0){
+		Bissextile=true;
+	}
+	if(year%100!=0&&year%4==0){
+		Bissextile=true;
+	}
+	return Bissextile;
+	// document.write(year+"<br/>");
+}
+
+
+//计算month月份的天数
+function numofmonth(month){
+	// alert(1);
+	month=month-1;
+	var numOfMonth;
+	if(month==0||month==2||month==4||month==6||month==7||month==9||month==11){
+		numOfMonth=31;}
+	else if(month==3||month==5||month==8||month==10){
+		numOfMonth=30;
+	}
+	else if(isBissextile(currYear)){               //判断当前年份是否是闰年
+		numOfMonth=29;
+	}
+	else{
+		numOfMonth=28;
+	}
+	return numOfMonth;
+	// allDay=allDay+numOfMonth;
+	document.write(numOfMonth+"<br/>");
+}
+
+
+//计算天数并输出结果
+function calAllDay(year,month,day,currYear,currMonth,currDay){
+	// var numOfT=(currYear-year)/4;
+	// var numOfT=Math.floor(numOfT);        //numOfT为年份经过的4年周期数
+	// var Yearflag=(currYear-year)%4;		  //用Yearflag表示年份除以4的余数
+	// var allDay=numOfT*(365*3+366);
+	// var leftyear=currYear-Yearflag;        //leftyear表示除去整数周期后的年份
+	var allDay=0;
+	for(year;year<currYear;year++){         //算出整数年的天数
+		if(isBissextile(year)){
+			allDay=allDay+366;
+		}
+		else{
+			allDay=allDay+365;
+		}
+	}
+	// alert(currMonth);
+	if(month<currMonth){                 
+		for(month;month<currMonth;month++){	
+			allDay=allDay+numofmonth(month);
+		}
+
+		if(day<currDay){
+			allDay=allDay+(currDay-day);
+		}
+		else{
+			allDay=allDay-(day-currDay);
+		}
+	}
+	else{
+		allDay=allDay-day+currDay;
+		// alert(currMonth);
+		month=month-1;
+		for(month;month>currMonth-1;month--){	
+			allDay=allDay-numofmonth(month);
+		}
+	}
+	allDay=allDay+1;
+	document.getElementById('result').innerHTML=allDay;			
+}
+
+function calculateDay(){
+	var currDate=new Date();           //创建一个表示当前系统时间的Date对象实例
+	var currYear=currDate.getFullYear();  //currDate调用getFullYear()方法获取年的信息，返回的4位整数
+	var currMonth=currDate.getMonth()+1;  //currDate调用getMonth()方法获取月的信息，返回0表示1月，11表示12月
+	var currDay=currDate.getDay();
+	var year=eval(document.getElementById('year')).value;
+	var month=eval(document.getElementById('month')).value;
+	var day=eval(document.getElementById('day')).value;
+	var typeFlag;
+	if(year==='number'&&month==='number'&&day==='number'){  //判断输入的是否是数字
+		typeFlag=true;
+	}
+	else{typeFlag=false;}
+
+	if((year%1===0)&&(month%1===0)&&(day%1===0)){    //判断输入的是否是整数
+		typeFlag=true;
+	}
+	else{typeFlag=false;}
+
+	if(year>=0&&month>=1&&month<=12&&day>=1&&day<=31){   //判断输入的是否符合年月日的规格
+		typeFlag=true;
+	}
+	else{typeFlag=false;}
+
+	if(typeFlag){
+		calAllDay(year,month,day,currYear,currMonth,currDay);
+	}
+	else{alert("error");}		
+}
+
+
+//生成随机的背景图片
+function randomImage(){
+	var bg = new Array(3);		//设定图片数量，如果图片数为3，这个参数就设为2，依次类推
+	bg[0] = 'https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/calculate_day2.jpg' 
+	bg[1] = 'https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/calculate_day4.jpg'
+	bg[2] = 'https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/calculate_day3.jpg'
+	bg[3] = 'https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/calculate_day3.jpg'
+	var index=Math.floor(Math.random()*bg.length);
+	document.write("<div class=\"contain\" style=\"background-image:url("+bg[index]+")\">");
+}
+
+
+
+//随机生成文字
+function randomFont(){
+	var bg = new Array(3);		//设定图片数量，如果图片数为3，这个参数就设为2，依次类推
+	bg[0] = '用合适的纹理。毕竟纹理能够将现实的' 
+	bg[1] = 'hehsfhdfjds f 史蒂夫'
+	bg[2] = '没事会是独生'
+	bg[3] = '合适的话数据时代is地点'
+	var index=Math.floor(Math.random()*bg.length);
+	document.write(bg[index]);
+}
