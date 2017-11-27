@@ -50,7 +50,7 @@ body{
 }
 .text2{
 	width:100%;
-	height:200px;
+	height:300px;
 	/*border:1px solid #fff;*/
 	font-family:"STXingkai";
 	font-size:20px;
@@ -60,7 +60,8 @@ body{
 	text-align:center;
 }
 .text3{
-	width:100%;
+	width:100px;
+	float:right;
 	height:200px;
 	/*border:1px solid #8da080;*/
 }
@@ -129,7 +130,7 @@ body{
 }
 .text2{
 	width:100%;
-	height:200px;
+	height:300px;
 	/*border:1px solid #fff;*/
 	font-family:"STXingkai";
 	font-size:20px;
@@ -139,7 +140,8 @@ body{
 	text-align:center;
 }
 .text3{
-	width:100%;
+	width:100px;
+	float:right;
 	height:200px;
 	/*border:1px solid #8da080;*/
 }
