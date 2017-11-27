@@ -31,7 +31,7 @@ body{
 }
 .text12{
 	width:50%;
-	height:30px;
+    height:25px;
 	/*border:1px solid #808080;*/
 	margin:0 auto;
 	font-family:"STXingkai";font-size:30px;color:#fff;
@@ -42,7 +42,8 @@ body{
 	height:200px;
 	border:1px solid #80ff80;
 	font-family:"STXingkai";
-	font-size:25px;
+	font-size:20px;
+	line-height:200%;
 	color:#fff;
 	text-align:center;
 }

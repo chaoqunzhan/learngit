@@ -114,7 +114,7 @@ function randomImage(){
 	bg[0] = 'https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/calculate_day2.jpg' 
 	bg[1] = 'https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/calculate_day4.jpg'
 	bg[2] = 'https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/calculate_day3.jpg'
-	bg[3] = 'https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/calculate_day3.jpg'
+	bg[3] = 'https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/calculate_day1.jpg'
 	var index=Math.floor(Math.random()*bg.length);
 	document.write("<div class=\"contain\" style=\"background-image:url("+bg[index]+")\">");
 }
@@ -124,7 +124,7 @@ function randomImage(){
 //随机生成文字
 function randomFont(){
 	var bg = new Array(3);		//设定图片数量，如果图片数为3，这个参数就设为2，依次类推
-	bg[0] = '用合适的纹理。毕竟纹理能够将现实的' 
+	bg[0] = '不要用满腔的愤怒和眼泪结束，<br/>要凝视真是到最后，<br/>重要的是永远记住真实，<br/>这才是拯救希望的稳固的根基' 
 	bg[1] = 'hehsfhdfjds f 史蒂夫'
 	bg[2] = '没事会是独生'
 	bg[3] = '合适的话数据时代is地点'
