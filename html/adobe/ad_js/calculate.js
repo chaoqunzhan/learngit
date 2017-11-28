@@ -111,13 +111,21 @@ function calculateDay(){
 
 //生成随机的背景图片
 function randomImage(){
-	var bg = new Array(5);		//设定图片数量，如果图片数为3，这个参数就设为2，依次类推
+	var bg = new Array(13);		//设定图片数量，如果图片数为3，这个参数就设为2，依次类推
 	bg[0] = 'https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/calculate_day2.jpg' 
 	bg[1] = 'https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/calculate_day4.jpg'
 	bg[2] = 'https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/calculate_day3.jpg'
 	bg[3] = 'https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/calculate_day1.jpg'
 	bg[4] = 'https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/calculate_day5.jpg'
 	bg[5] = 'https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/calculate_day6.jpg'
+	bg[6] = 'https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/calculate_day7.jpg'
+	bg[7] = 'https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/calculate_day8.jpg'
+	bg[8] = 'https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/calculate_day9.jpg'
+	bg[9] = 'https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/calculate_day10.jpg'
+	bg[10] = 'https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/calculate_day11.jpg'
+	bg[11] = 'https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/calculate_day12.jpg'
+	bg[12] = 'https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/calculate_day13.jpg'
+	bg[13] = 'https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/calculate_day14.jpg'
 	var index=Math.floor(Math.random()*bg.length);
 	document.write("<div class=\"contain\" style=\"background-image:url("+bg[index]+")\">");
 }
