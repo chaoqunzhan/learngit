@@ -39,7 +39,10 @@
 .container{
   width:990px;
   margin:0 auto;
-  background:url(../images/aboutbj2.jpg) repeat-x;
+  /*background:url(../images/aboutbj2.jpg) repeat-x;*/
+  border:1px solid #ced9e3; 
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
 }
 
 .container2{
@@ -99,7 +102,7 @@
 }
 
 .wenben {
-
+background-color:#fff;
   border:1px solid #ced9e3;
   width: 540px;
   height:1050px;
@@ -135,6 +138,7 @@
 }
 
 .remenlianjie{
+  background-color:#fff;
 	width:200px;
     border:1px solid #ced9e3; 
     -webkit-border-top-right-radius: 8px;

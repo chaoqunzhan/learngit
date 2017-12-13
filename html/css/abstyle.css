@@ -39,13 +39,16 @@ li:hover a {
 .container{
   width:990px;
   margin:0 auto;
-  background:url(../images/aboutbj2.jpg) repeat-x;
+  /*background:url(../images/aboutbj2.jpg) repeat-x;*/
+  border:1px solid #fff;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
 }
 
 .container2{
   width:80%;
   height:1500px;
-  background-color:;
+  
   margin:0 auto;
   /*border:15px solid #ced9e3;*/  
 }
@@ -62,6 +65,7 @@ li:hover a {
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   clear:right; 
+  background-color:#fff;
 }
 .zym{
   width:400px;

@@ -2,9 +2,11 @@
 /****************************************导航栏****************************************************、*/
  @media screen and (min-width:680px){
 *{
-  margin:0;padding:0;
+  margin:0;
+  padding:0;
 }
-.btx li {padding:20px 20px; 
+.btx li {
+  padding:20px 20px; 
   list-style-type : none;    
   float   : left;                    
 }
@@ -37,15 +39,18 @@ li:hover a {
 }
 
 .back{
-  background-color:#fff;
+  /*background-color:#fff;*/
   width:990px;
   margin:0 auto;
+  border:1px solid #fff;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
 }
 
 .container{
   width:990px;
   margin:0 auto;
-  background:url(../images/aboutbj2.jpg) repeat-x;
+  /*background:url(../images/aboutbj2.jpg) repeat-x;*/
 }
 
 .container2{
@@ -65,7 +70,7 @@ li:hover a {
   /*height:1150px;*/  
   margin:0 auto;
   border:1px solid #ced9e3; 
-    clear:right; }
+  clear:right; }
 .zym{
   width:200px;
   height:30px;
@@ -88,6 +93,7 @@ li:hover a {
 .youlan{
   width: 180px;
 /*  height:1050px; */ 
+  /*background-color:#fff;*/
   margin:20px 10px  0px 10px;
   border:1px solid #ced9e3;
    -webkit-border-radius: 8px;
@@ -330,12 +336,33 @@ li:hover a {
 
 /*****************************************容器设置*****************************************************/
 
+body:before { content: ' ';
+   position: fixed;  
+    z-index: -1;   
+    top: 0;  
+     right: 0;   
+     bottom: 0;   
+     left: 0;  
+     background: url(../images/index-bg.jpg) center 0 no-repeat;  
+     background-size: cover; 
+}
 
-
-.container{
+.container:{
   width:100%;
   margin:0 auto;
-  background:url(../images/aboutbj2.jpg) repeat-x;
+  /*background: url(https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/calculate_day12.jpg) center;*/
+  background-repeat:no-repeat;
+  
+/*  position: fixed; 
+  z-index: -1; 
+  top: 0; 
+  right: 0; 
+  bottom: 0; 
+  left: 0;*/
+/*  background-attachment:fixed;*/
+  /*background-size: cover;*/
+  /*background-color:#0b89fe;*/
+ /* background:url(../images/aboutbj2.jpg) repeat-x;*/
 }
 
 .container2{

@@ -126,6 +126,8 @@ function randomImage(){
 	bg[11] = 'https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/calculate_day12.jpg'
 	bg[12] = 'https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/calculate_day13.jpg'
 	bg[13] = 'https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/calculate_day14.jpg'
+	bg[14] = 'https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/calculate_day15.jpg'
+	bg[15] = 'https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/calculate_day16.jpg'
 	var index=Math.floor(Math.random()*bg.length);
 	document.write("<div class=\"contain\" style=\"background-image:url("+bg[index]+")\">");
 }
@@ -134,16 +136,16 @@ function randomImage(){
 
 //随机生成文字
 function randomFont(){
-	var bg = new Array(6);		//设定图片数量，如果图片数为3，这个参数就设为2，依次类推
+	var bg = new Array(8);		//设定图片数量，如果图片数为3，这个参数就设为2，依次类推
 	bg[0] = '不要用满腔的愤怒和眼泪结束<br/>要凝视真实<br/>这才是拯救希望<br/>的稳固的根基' 
 	bg[1] = '毋庸置疑<br/>好的事总会到来<br/>当它来晚时<br/>也不失是一种惊喜'
 	bg[2] = '<br/>可以不需要原谅<br/>但不应该被遗忘'
 	bg[3] = '我们一路奋战<br/>不是为了改变世界<br/>而是不让世界改变我们'
 	bg[4] = '惊喜就是<br/>你人生的一部分<br/>它来了<br/>你想躲也躲不开'
 	bg[5] = '要保持剑的锋利<br/>就得时时磨拭<br/>要保持头脑灵光<br/>就得看书'
-	bg[5] = '在变换的时代里<br/>岁月<br/>原来是最大的小偷'
-	bg[5] = '鸡汤要一口一口喝<br/>路要一步一步走<br/>步子迈得太大<br/>容易扯到蛋'
-	bg[5] = '梦想是什么<br/>梦想是让你坚持<br/>就会感到快乐<br/>的东西'
+	bg[6] = '在变换的时代里<br/>岁月<br/>原来是最大的小偷'
+	bg[7] = '鸡汤要一口一口喝<br/>路要一步一步走<br/>步子迈得太大<br/>容易扯到蛋'
+	bg[8] = '梦想是什么<br/>梦想是让你坚持<br/>就会感到快乐<br/>的东西'
 	var index=Math.floor(Math.random()*bg.length);
 	document.write(bg[index]);
 }

@@ -39,14 +39,17 @@ li:hover a {
 .con{
   width:990px;
   margin:0 auto;
-  height:1700px;
-  background-color:white;
+  height:1700px;border:1px solid #fff;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  /*background-color:white;*/
 }
 
 .container{
   width:990px;
   margin:0 auto;
-  background:url(../images/aboutbj2.jpg) repeat-x;
+
+  /*background:url(../images/aboutbj2.jpg) repeat-x;*/
 }
 
 .container2{
@@ -302,12 +305,24 @@ li:hover a {
 
 /*****************************************容器设置*****************************************************/
 
-
+body:before { content: ' ';
+   position: fixed;  
+    z-index: -1;   
+    top: 0;  
+     right: 0;   
+     bottom: 0;   
+     left: 0;  
+     background: url(../images/index-bg.jpg) center 0 no-repeat;  
+     background-size: cover; 
+}
 
 .container{
   width:100%;
   margin:0 auto;
-  background:url(../images/aboutbj2.jpg) repeat-x;
+/*  background: url(../images/index-bg.jpg) center;*/
+ /* background-repeat:no-repeat;
+  background-attachment:fixed;*/
+ /* background:url(../images/aboutbj2.jpg) repeat-x;*/
 }
 
 .container2{
