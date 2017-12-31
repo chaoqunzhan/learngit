@@ -126,20 +126,15 @@ background-color:#fff;
 }
 .tu1{
 	width:500px;
-	
 	margin:0 auto;
 }
 .tu2{
-  width:500px;
-  height:320px;
-  margin:0 auto;
-  background-image:url(https://t1.picb.cc/uploads/2017/10/03/89MFL.jpg);
+  width:250px;
+  float:left;
 }
 .tu3{
-  width:500px;
-  height:415px;
-  margin:0 auto;
-  background-image:url(https://t1.picb.cc/uploads/2017/10/03/89WVW.jpg);
+  width:250px;
+  float:right;
 }
 .tu4{
   width:500px;
