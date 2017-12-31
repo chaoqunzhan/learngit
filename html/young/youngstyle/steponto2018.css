@@ -33,12 +33,12 @@
   background-repeat:no-repeat;
   background-attachment:fixed;
   width: 100%;
-  height:2200px;               
+  height:5200px;               
 }
 .con{
   width:990px;
   margin:0 auto;
-  height:2000px;
+  height:5000px;
   border:1px solid #fff;
 -webkit-border-radius:8px;
 -moz-border-radius:8px;
@@ -370,21 +370,16 @@ background-color:#fff;
 }*/
 .tu1{
   width:90%;
-  
   margin:0 auto;
   
 }
 .tu2{
-  width:90%;
-  height:180px;
-  margin:0 auto;background-size:cover;
-  background-image:url(https://t1.picb.cc/uploads/2017/10/03/89MFL.jpg);
+  width:50%;
+  float:left;
 }
 .tu3{
-  width:90%;
-  height:250px;
-  margin:0 auto;background-size:cover;
-  background-image:url(https://t1.picb.cc/uploads/2017/10/03/89WVW.jpg);
+  width:50%;
+  float:right;
 }
 .tu4{
   width:90%;
