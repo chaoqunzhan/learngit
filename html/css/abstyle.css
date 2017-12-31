@@ -158,11 +158,20 @@ li:hover a {
 /*****************************************容器设置*****************************************************/
 
 
-
+body:before { content: ' ';
+   position: fixed;  
+    z-index: -1;   
+    top: 0;  
+     right: 0;   
+     bottom: 0;   
+     left: 0;  
+     background: url(../images/index-bg.jpg) center 0 no-repeat;  
+     background-size: cover; 
+}
 .container{
   width:100%;
   margin:0 auto;
-  background:url(../images/aboutbj2.jpg) repeat-x;
+  /*background:url(../images/aboutbj2.jpg) repeat-x;*/
 }
 
 .container2{
@@ -192,26 +201,28 @@ li:hover a {
   float:right;
 }
 .wenben {
+  background-color:#fff;
   border:1px solid #ced9e3;
   width: 90%;
   height:1200px;
   margin:20px 20px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
-  -webkit-box-shadow:3px 3px 5px #ced9e3;
-  -moz-box-shadow: 3px 3px 5px #ced9e3;
+  /*-webkit-box-shadow:3px 3px 5px #ced9e3;
+  -moz-box-shadow: 3px 3px 5px #ced9e3;*/
   float:left;
 }
 
 .youlan{
+  background-color:#fff;
   width: 90%;
   height:370px;  
   margin:20px 20px;
   border:1px solid #ced9e3;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
-  -webkit-box-shadow:3px 3px 5px #ced9e3;
-  -moz-box-shadow: 3px 3px 5px #ced9e3;
+ /* -webkit-box-shadow:3px 3px 5px #ced9e3;
+  -moz-box-shadow: 3px 3px 5px #ced9e3;*/
   clear:left;
 }
 
