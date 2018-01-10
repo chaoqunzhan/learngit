@@ -1,0 +1,265 @@
+/**************************************pc版***********************************************/
+/****************************************导航栏****************************************************、*/
+ @media screen and (min-width:680px){
+*{
+  margin:0;
+  padding:0;
+}
+.btx li {
+  padding:20px 20px; 
+  list-style-type : none;    
+  float   : left;                    
+}
+
+a  {
+  font-size : 20px;
+  text-decoration : none;
+  position        : relative;
+  top   : 0;
+  color : #FFF;     
+  transition : all .4s;
+}
+
+li:hover a {
+  top   : -20px;
+  color : #4eacff;
+  background-color: #808080;
+  box-shadow : 0 0 5px 0 rgba(255, 255, 255, 0.7);
+  transition : all .4s;
+}
+
+/*****************************************容器设置*****************************************************/
+
+#one{               
+  background: url(https://raw.githubusercontent.com/chaoqunzhan/learngit/master/html/images/index-bg.jpg) center;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  width: 100%;
+  height:2100px;               
+}
+
+.back{
+  /*background-color:#fff;*/
+  width:990px;
+  margin:0 auto;
+  border:1px solid #fff;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+}
+
+.container{
+  width:990px;
+  margin:0 auto;
+  /*background:url(../images/aboutbj2.jpg) repeat-x;*/
+}
+
+.container2{
+  width:80%;
+  height:1900px;
+  background-color:;
+  margin:0 auto;
+  border:15px solid #ced9e3;  
+}
+
+
+
+/***********************************内容框**************************************/
+
+.zt{
+  width: 100%;
+  /*height:1150px;*/  
+  margin:0 auto;
+  border:1px solid #ced9e3; 
+  clear:right; 
+}
+.zym{
+  width:200px;
+  height:30px;
+  float:right; 
+}
+
+
+.tishi{
+  width:100%;
+  height:3300px;
+}
+
+#liuyan{
+  clear:both;
+  margin:0 auto;
+  width:800px;
+/*  border:1px solid #111111;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;*/
+}
+
+#shuruneirong{
+  width:100%;
+  height:140px;
+  margin:20 0 0 0;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+}
+
+#users{
+  float: left;
+  /*-webkit-border-radius: 2px;
+    -moz-border-radius: 2px;*/
+}
+
+#anniu{
+  float:right;
+}
+
+#guodu{
+  width:100%;
+  height:100px;
+
+}
+
+#zhanshi{
+  width:800px; 
+  border:0;
+  margin:0 auto;
+/*background-color:#add3ef;*/
+}
+
+
+.list{
+  width:100%;
+  margin:20 0 20 0;
+  border:1px solid #000;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+   background-color:#707070; 
+}
+
+#name_time{
+  padding:10px;
+  /*background-color:#707070;*/
+}
+
+#name{
+  width:20%;
+  float:left;
+  color:#ff0000;
+  /*border:1px solid #000;*/
+}
+
+#time{
+  color:#808080;
+  width:20%;
+  float:right;
+  /*border:1px solid #000;*/
+}
+
+#text{
+  padding:10px;
+  width:100%;
+  clear:both;
+  /*border:1px solid #000;*/
+}
+
+}
+/***************************************************************************/
+
+/**************************************************************************/
+
+/*******************************移动端**************************************/
+ @media screen and (max-width:680px){
+*{
+  margin:0;padding:0;
+}
+
+
+.title{
+  width:100%;
+  height:100px;
+}
+
+.btx{
+  width:350px;
+  height:120px;
+  margin:0 auto;
+}
+.btx li {padding:20px 20px; 
+  list-style-type : none;    
+  float   : left;                    
+}
+
+a  {
+  font-size : 20px;
+  text-decoration : none;
+  position        : relative;
+  top   : 0;
+  color : #FFF;     
+  transition : all .4s;
+}
+
+li:hover a {
+  top   : -20px;
+  color : #4eacff;
+  background-color: #808080;
+  box-shadow : 0 0 5px 0 rgba(255, 255, 255, 0.7);
+  transition : all .4s;
+}
+
+/*****************************************容器设置*****************************************************/
+
+body:before { content: ' ';
+   position: fixed;  
+    z-index: -1;   
+    top: 0;  
+     right: 0;   
+     bottom: 0;   
+     left: 0;  
+     background: url(../images/index-bg.jpg) center 0 no-repeat;  
+     background-size: cover; 
+}
+
+.container:{
+  width:100%;
+  margin:0 auto;
+  /*background: url(https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/calculate_day12.jpg) center;*/
+  background-repeat:no-repeat;
+  
+/*  position: fixed; 
+  z-index: -1; 
+  top: 0; 
+  right: 0; 
+  bottom: 0; 
+  left: 0;*/
+/*  background-attachment:fixed;*/
+  /*background-size: cover;*/
+  /*background-color:#0b89fe;*/
+ /* background:url(../images/aboutbj2.jpg) repeat-x;*/
+}
+
+.container2{
+  width:100%;
+  /*height:1800px;*/
+  background-color:;
+  margin:0 auto;
+  /*border:15px solid #ced9e3;*/  
+}
+
+
+
+/***********************************内容框**************************************/
+
+.zt{
+  width: 100%;
+  /*height:1200px;  */
+  margin:0 auto;
+ 
+  clear:right;
+}
+
+.zym{
+  width:50%;
+  height:15px;
+  float:right;
+}
+
+
+}
