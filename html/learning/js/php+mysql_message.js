@@ -24,6 +24,7 @@ function InsertFrame_youlan(){
                 	"<div class=\"remenlianjie\">"+
                         "<p style=\"font-size:14px;color:#808080\">热门<font color=\"#6deef3\" size=\"3px\">推荐</font>："+
                         "<ol class=\"zyb\">"+
+                        	"<li><a href=\"php+mysql_message.html\" target=\"_blank\"> PHP+MySQL留言板</a></li>"+
                             "<li><a href=\"../../adobe/adobe2.html\" target=\"_blank\"> Adobe软件安装破解</a></li>"+
                             "<li><a href=\"../../adobe/adobe1.html\" target=\"_blank\"> VIP视频免费看教程</a></li>"+
                             "<li><a href=\"../../young/young1.html\" target=\"_blank\">自己码？套模板？</a></li>"+
@@ -34,6 +35,8 @@ function InsertFrame_youlan(){
                     "<div class=\"xiangguan\">"+
                         "<p style=\"font-size:14px;color:#808080\">相关<font color=\"6df3a6\" size=\"3px\">文章</font>："+
                         "<ul class=\"zyb\">"+
+                            "<li><a href=\"../../adobe/adobe5.html\" target=\"_blank\">HTML+css+js导航栏</a></li>"+
+                            "<li><a href=\"../../adobe/calculate.html\" target=\"_blank\">获取你的天数</a></li>"+
                             "<li><a href=\"../../adobe/adobe2.html\" target=\"_blank\">Adobe软件安装破解</a></li>"+
                             "<li><a href=\"../../adobe/adobe3.html\" target=\"_blank\">Win10的813错误</a></li>"+
                             "<li><a href=\"../../adobe/adobe4.html\" target=\"_blank\">PS油画字制作</a></li>"+

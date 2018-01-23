@@ -26,14 +26,17 @@
             <div class="zt">
                 <div class="wenben">
                     <div class="wenben1">
-                    <p>从个人博客上线以来就一直缺少留言板这个重要的板块，因为都是刚入门，所以很多东西都是处在摸索阶段，可以说是什么都不懂开始。经过几周的学习，从网上的教学视频、图书馆的PHP+MySQL教程，还有工作同学的友情帮助。总算是造出了一个简陋的留言板，当然目前只能是单方面的留言，没有回复功能，网站也没有注册功能。这些都是我接下来要改进的方面。下面就简单的做个留言板制作过程总结：</p>
+                    <p>&nbsp;</p>
+                    <div><img src="https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/learning/message1.jpg" alt="" width="100%"/></div>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;从个人博客上线以来就一直缺少留言板这个重要的板块，因为都是刚入门，所以很多东西都是处在摸索阶段，可以说是什么都不懂开始。经过几周的学习，从网上的教学视频、图书馆的PHP+MySQL教程，还有工作同学的友情帮助。总算是造出了一个简陋的留言板，当然目前只能是单方面的留言，没有回复功能，网站也没有注册功能。这些都是我接下来要改进的方面。下面就简单的做个留言板制作过程总结：</p>
                     <p>一、工作环境的搭建</p>
-                    <p>PHP和MySQL是不能像HTML一样直接在记事本上写完代码就能在浏览器上进行本地测试的，它需要搭建Apache+PHP+MySQL环境。换句话说就是，你要安装这三个软件，我一开始也是这样尝试的，但是发现这些软件的安都相当麻烦。后来在同学的帮助下。安装了wamp，就是一款集成的环境，安装很简单，百度一下教程，到处可见。</p>
-                    <p>但是安装后会遇到开启不了的问题，就是显示不了绿灯而一直是黄灯。这种状态其实就是wamp没能正常运行，常见的问题就是计算机的80端口被占用，而wamp的默认端口就是80端口，所以解决的方法就是找到（这里在wamp中自带的检测功能）并关闭占用80端口的应用程序。</p>
-                    <p>如果发现实IIS占用的80端口，解决方法就是：</p>
-                    <p>win+r -> 打开运行 -> 输入 -> services.msc ->进入服务页面，->找到 World Wide Web 发布服务 -> 停止此服务，然后在找到 -> wampapache   开启服务，去重启wampserver -> 打开localhost界面查看是否可以运行了！确定可以再次启动 -> World Wide Web 发布服务 -> 可以设置为手动启动。</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;PHP和MySQL是不能像HTML一样直接在记事本上写完代码就能在浏览器上进行本地测试的，它需要搭建Apache+PHP+MySQL环境。换句话说就是，你要安装这三个软件，我一开始也是这样尝试的，但是发现这些软件的安都相当麻烦。后来在同学的帮助下。安装了wamp，就是一款集成的环境，安装很简单，百度一下教程，到处可见。</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;但是安装后会遇到开启不了的问题，就是显示不了绿灯而一直是黄灯。这种状态其实就是wamp没能正常运行，常见的问题就是计算机的80端口被占用，而wamp的默认端口就是80端口，所以解决的方法就是找到（这里在wamp中自带的检测功能）并关闭占用80端口的应用程序。</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;如果发现实IIS占用的80端口，解决方法就是：</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;win+r -> 打开运行 -> 输入 -> services.msc ->进入服务页面，->找到 World Wide Web 发布服务 -> 停止此服务，然后在找到 -> wampapache   开启服务，去重启wampserver -> 打开localhost界面查看是否可以运行了！确定可以再次启动 -> World Wide Web 发布服务 -> 可以设置为手动启动。</p>
                     <p>二、MySQL数据库的建立</p>
-                    <p>MySQL数据库的建立可以有两种方法，一种是直接在MySQL控制台上输入指令：</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;MySQL数据库的建立可以有两种方法，一种是直接在MySQL控制台上输入指令：</p>
                     <textarea name="" id="daima1" cols="" rows="10" readonly="readonly">
 CREATE TABLE 'message' (                  //建立表格
 'id' tinyint(1) NOT NULL auto_increment,  //数据的id，相当于序号
@@ -43,9 +46,9 @@ CREATE TABLE 'message' (                  //建立表格
 PRIMARY KEY ('id')
 ) ENGINE=InnoDB DEFAULT CHARSET=gbk AUTO_INCREMENT=1 ;
                     </textarea>
-                    <p>还有另一种就是用MySQL-front客户端进行模块化的建立，这种方法比较直观，详情参考网络上的教程。</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;还有另一种就是用MySQL-front客户端进行模块化的建立，这种方法比较直观，详情参考网络上的教程。</p>
                     <p>三、PHP文件编写</p>
-                    <p>PHP程序的编写主要分为两个部分，一个是数据库的连接文件conn.php，另一个则是主程序add.php。其中主程序和HTML混编，其实这种混编在现在的前端领域算是过时的，但是由于水平有限，只能将就了。代码如下：</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;PHP程序的编写主要分为两个部分，一个是数据库的连接文件conn.php，另一个则是主程序add.php。其中主程序和HTML混编，其实这种混编在现在的前端领域算是过时的，但是由于水平有限，只能将就了。代码如下：</p>
                     <p>conn.php</p>
                     <textarea name="" id="daima1" cols="30" rows="10">
 <?php
@@ -114,12 +117,12 @@ if(isset($_POST['submit'])){
           </div>
                     </textarea>
                     <p>四、总结一下在整个制作过程中遇到问题</p>
-                    <p>1.PHP在本地预览的时候经常出现修改了css，但是实际的效果并没有改变，这是因为浏览器的缓存问题，要清空浏览器的缓存再进行预览。</p>
-                    <p>2.css中的Margin和padding标签写成上下左右的时候（margin：20px 0 20px 0）需要带单位。</p>
-                    <p>3.box-sizing: border-box;内边框布局</p>
-                    <p>&nbsp;&nbsp;box-sizing: content-box;外边框</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;1.PHP在本地预览的时候经常出现修改了css，但是实际的效果并没有改变，这是因为浏览器的缓存问题，要清空浏览器的缓存再进行预览。</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;2.css中的Margin和padding标签写成上下左右的时候（margin：20px 0 20px 0）需要带单位。</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;3.box-sizing: border-box;内边框布局</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;box-sizing: content-box;外边框</p>
 
-                    <p>4.实现图片只适应大小的代码：</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;4.实现图片只适应大小的代码：</p>
                     <textarea name="" id="daima1" cols="30" rows="10">
 div {
     width: 400px;
@@ -132,14 +135,14 @@ img {
 }
 不管容器有多大，只要将img的宽高设置成100%（这里的100%是相对于父级宽高而言）就能自适应容器大小。
 </textarea>         
-                    <p>5.实现单行文字居中
-                    <p>&nbsp;&nbsp;text-align:center;</p> 
-                    <p>&nbsp;&nbsp;line-height:120px;（120为容器高度）</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;5.实现单行文字居中
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-align:center;</p> 
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;line-height:120px;（120为容器高度）</p>
                     </p>
-                    <p>6.
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;6.
                         HTML提供了5种空格实体（space entity），它们拥有不同的宽度，非断行空格（<xmp>&nbsp;</xmp>）是常规空格的宽度，可运行于所有主流浏览器。其他几种空格（ <xmp>&ensp; &emsp; &thinsp; &zwnj;&zwj;</xmp>）在不同浏览器中宽度各异。
                     </p>
-                    <p>7.可以在PHP连接文件中（conn.php）加入error_reporting(0);关闭PHP的错误警告。</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;7.可以在PHP连接文件中（conn.php）加入error_reporting(0);关闭PHP的错误警告。</p>
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
 
