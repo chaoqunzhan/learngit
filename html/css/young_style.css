@@ -39,7 +39,8 @@ li:hover a {
 .con{
   width:990px;
   margin:0 auto;
-  height:2000px;border:1px solid #fff;
+  height:2200px;
+  border:1px solid #fff;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   /*background-color:white;*/
