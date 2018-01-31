@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC>
+<head>
+<meta content="width=device-width,user-scalable=yes" name="viewport"> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>爱玩的电科郎</title>
+<link href="index.css"  rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</head>
+
+<body id="one">
+<div class="header">
+<div id="header-son">
+  <div class="title">
+    <img src="images/W.png" alt="" width="100%">
+  </div>
+  <div id="re-mune"></div>
+  <div class="btx"> 
+    <ul id="nav">
+    <li><a herf="index.html">HOME</a></li>
+    <li><a herf="about_me.html">ABOUT ME</a></li>
+    <li><a herf="#">YOUNG</a>
+        <ul>
+        <li><a href="../young.html">Sighting</a></li>
+        <li><a href="菜单页面的地址">Activity</a></li>
+        <li><a href="菜单页面的地址">Funny</a></li>
+        </ul>
+    </li>
+    <li><a herf="#">INSTEREST</a>
+        <ul>
+        <li><a href="菜单页面的地址">HALA MADRID</a></li>
+        <li><a href="菜单页面的地址">L.A.Lakers</a></li>     
+        </ul>
+    </li>
+    <li><a herf="#">LEARNING</a>
+        <ul>
+        <li><a href="菜单页面的地址">HTML+CSS</a></li>
+        <li><a href="菜单页面的地址">Javascript</a></li>
+        <li><a href="菜单页面的地址">Photoshop</a></li>
+        <li><a href="菜单页面的地址">NMR</a></li>
+        </ul>
+    </li>
+    <li><a herf="#">SAYING</a></li>
+    </ul>
+  </div>
+</div>   
+</div>
+<div id="bodyPage">
+  <img src="images/bg1.jpg" class="bg">
+  <img src="images/bg2.jpg" class="bg">
+  <img src="images/bg3.jpg" class="bg"> 
+  <!-- <a href="#"><img src="images/prev.png" class="prev"/></a>
+  <a href="#"><img src="images/next.png" class="next"/></a> -->
+</div>
+<script type="text/javascript">
+$(document).ready(function(e) {
+    
+   $("#bodyPage").fullImages({
+     ImgWidth: 1920,
+     ImgHeight: 637,
+     autoplay : 5500,
+     fadeTime : 1000,
+   });
+});
+</script>
+<div id="bonner_bottom"></div>
+</body>
+</html>

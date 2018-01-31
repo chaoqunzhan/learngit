@@ -1,0 +1,228 @@
+@charset"utf-8";
+*{
+  margin:0;padding:0;
+  box-sizing:border-box;
+}
+#one{ 
+  background-color:#fff;              
+  /*background: url(https://raw.githubusercontent.com/chaoqunzhan/learngit/master/html/images/index-bg.jpg) center;*/
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  width:100%;
+  height:2600px; 
+  top:0; 
+ /* border:1px solid #000;*/             
+}
+
+.title{
+ float:left; 
+ /*background-color:#000;*/
+}
+.btx{
+ float:right;
+ /*border:1px solid #c9c9c9;*/
+}
+#bonner_bottom{
+  width:100%;
+  height:4px;
+  background-color:#000;
+}
+#bodyPage{ 
+  width:100%; 
+  /*margin-top:101px;*/
+  /*border:1px solid #000;*/
+  clear:both;
+}
+
+img.bg { 
+  position:absolute; 
+  z-index:-1; 
+  display:none;
+}
+
+img.prev {
+  position:absolute;
+  left:30px;
+  /*margin:50 50 50 50;*/
+  float:left;
+  opacity:0.2; 
+}
+img.next {
+  position:absolute;
+  right:30px;
+  float:right;
+  opacity:0.2; 
+}
+
+/**************************************pc版***********************************************/
+@media screen and (min-width:1024px){
+.header{
+  width:100%;
+  /*height:101px;*/
+}
+#header-son{
+  position:fixed;
+  width:100%;
+  background-color:#fff;
+}
+.btx{
+  width:70%;
+  /*height:101px;*/
+}
+/*主菜单样式*/
+
+#nav a{
+  display:block;
+  color:#666;
+  text-decoration: none;
+}
+
+#nav a:hover {
+  color:#FFF;
+  background:#43a4fd;
+}
+
+#nav{
+  z-index:0;
+  line-height:24px;
+  list-style-type:none;
+  background:#666;
+  /*margin:100px 100px;*/
+}
+
+#nav li{
+  text-align:center;
+  float:left;
+ /* width:120px;*/
+  font-size:18px;
+  font-weight:650;
+  margin:0px 40px 5px 0px;
+}
+
+#nav li ul{
+  line-height:24px;
+  position:absolute;
+  left:-1000px;                /*把ul的起始位置设为-1000，*/
+  list-style-type:none;        /*用于开始鼠标没经过的时，隐藏子目录*/
+  text-align:left;
+  background:#fff;
+  border-top:1px solid #666;
+  padding:1px;
+}
+
+#nav li ul li{
+  margin-top:0px; 
+  margin:0px 0px 0px 0px;
+  clear:both;
+  list-style-type:none;
+  width:110px;
+}
+
+
+#nav li ul li a{
+  text-align:left;
+  padding-left:0px;
+}
+#nav li.mouseover ul{
+  left:auto;          /*当鼠标经过时，把ul设为正常值，显示子目录*/
+}
+#re-mune{
+  display:none;
+  position:absolute;
+}
+
+img.bg { 
+  width:100%;
+}
+
+}
+
+
+/*window-width小于1024的导航栏效果*/
+@media screen and (max-width:1023px){
+.header{
+  width:100%;
+}
+.title{
+  width:256px;
+}
+.btx{
+  width:100%;
+  position:absolute;
+  display:none;
+  /*height:67px;*/
+  background-color:#fff;
+  z-index:0;
+}
+
+#nav{
+  list-style-type:none;
+  font-size:22px;
+}
+#nav li{
+  color:#616161;
+  border:1px solid #c9c9c9;
+  list-style-type:none;
+  position:relative;
+  /*height:40px;
+  line-height:40px;*/
+  padding:8px 0 8px 10px;
+}
+
+#nav li ul li{
+  display:none;
+  background-color:#cbe0ed;
+}
+#nav li ul li a{
+  text-decoration:none;
+  color:#616161;
+}
+
+#re-mune{
+  width:40px;
+  height:40px;
+  margin-right:10px;
+  right:0;
+  z-index:1;
+  background:url(images/mune1.png);
+  position:absolute;
+}
+
+}
+
+/*宽度小于1023px大于385的效果*/
+@media screen and (max-width:1023px) and (min-width:385px) {
+img.bg { 
+  width:100%;
+}
+}
+
+
+
+
+/*宽度小于385px的效果*/
+@media screen and (max-width:384px){
+.header{
+  width:360px;
+  height:241px;
+}
+.btx{
+  width:100%;
+  height:70px;
+  clear:both;
+}
+
+img.bg { 
+  width:384px;
+}
+#bonner_top{
+  width:384px;
+  height:4px;
+  background-color:#808080;
+}
+#bonner_bottom{
+  width:384px;
+  height:4px;
+  background-color:#808080;
+}
+}
