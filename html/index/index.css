@@ -184,7 +184,7 @@ img.bg {
   margin-right:10px;
   right:0;
   z-index:1;
-  background:url(images/mune1.png);
+  background:url(https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/index/mune1.png);
   position:absolute;
 }
 
@@ -195,6 +195,10 @@ img.bg {
 img.bg { 
   width:100%;
 }
+
+
+
+
 }
 
 
@@ -204,25 +208,50 @@ img.bg {
 @media screen and (max-width:384px){
 .header{
   width:360px;
-  height:241px;
-}
-.btx{
-  width:100%;
-  height:70px;
-  clear:both;
 }
 
 img.bg { 
   width:384px;
 }
-#bonner_top{
+
+#four-show{
   width:384px;
-  height:4px;
-  background-color:#808080;
 }
-#bonner_bottom{
-  width:384px;
-  height:4px;
-  background-color:#808080;
+
+}
+
+
+
+/*-------------------------four-show的css样式表--------------------------*/
+@media screen and (min-width:767px){
+
+#four-show{
+  width:100%;
+  height:1000px;
+  border:1px solid #808080;
+  /*margin:10px 2% 10px 2%;*/
+}
+
+.four-show-son{
+  width:46%;
+  float:left;
+  border:1px solid #808080;
+  margin:2% 2% 2% 2%;
+}
+}
+
+@media screen and (max-width:766px){
+
+#four-show{
+  height:1800px;
+  border:1px solid #808080;
+  /*margin:10px 2% 10px 2%;*/
+}
+
+.four-show-son{
+  width:96%;
+  float:left;
+  border:1px solid #808080;
+  margin:2% 2% 2% 2%;
 }
 }

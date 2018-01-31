@@ -38,7 +38,13 @@
             var ImgHeight,Imgwidth;
             var hValue=ImgHeight/ImgWidth;
             var img_height=$(window).width()*hValue;
-            _this.css("height",img_height);
+            var img_height1=384*hValue;
+            if($(window).width()>=384){
+                _this.css("height",img_height);
+            }
+            else{
+                _this.css("height",img_height1);
+            }
             //自适应左右箭头的大小
             // var prev_width=$(window).width()*0.05;
             // _this.find("img.prev").css("width",prev_width);
@@ -85,10 +91,10 @@ $(document).ready(function(){
             $(".btx").slideToggle(300);
             t_click++;
             if(t_click%2==1){
-                setTimeout(function(){$("#re-mune").css("background","url(images/mune2.png)");},100);//用setTimeout延时来匹配菜单变换效果
-                $("#one").css("position","fixed");
+                setTimeout(function(){$("#re-mune").css("background","url(https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/index/mune2.png)");},100);//用setTimeout延时来匹配菜单变换效果
+                // $("#one").css("position","fixed");
             }
-            else{setTimeout(function(){$("#re-mune").css("background","url(images/mune1.png)")},300);};
+            else{setTimeout(function(){$("#re-mune").css("background","url(https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/index/mune1.png)")},300);};
         });
 
 
@@ -104,10 +110,18 @@ $(document).ready(function(){
         }; 
 
         //设置#nav li的背景
-        $("#nav li:eq(1)").css("background","url(images/mune4.png)").css("background-repeat","no-repeat").css("background-position","right"); 
-        $("#nav li:eq(2)").css("background","url(images/mune3.png)").css("background-repeat","no-repeat").css("background-position","right"); 
-        $("#nav li:eq(6)").css("background","url(images/mune3.png)").css("background-repeat","no-repeat").css("background-position","right"); 
-        $("#nav li:eq(9)").css("background","url(images/mune3.png)").css("background-repeat","no-repeat").css("background-position","right"); 
-        $("#nav li:eq(14)").css("background","url(images/mune4.png)").css("background-repeat","no-repeat").css("background-position","right"); 
+        $("#nav li:eq(1)").css("background","url(https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/index/mune4.png)").css("background-repeat","no-repeat").css("background-position","right"); 
+        $("#nav li:eq(2)").css("background","url(https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/index/mune3.png)").css("background-repeat","no-repeat").css("background-position","right"); 
+        $("#nav li:eq(6)").css("background","url(https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/index/mune3.png)").css("background-repeat","no-repeat").css("background-position","right"); 
+        $("#nav li:eq(9)").css("background","url(https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/index/mune3.png)").css("background-repeat","no-repeat").css("background-position","right"); 
+        $("#nav li:eq(14)").css("background","url(https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/index/mune4.png)").css("background-repeat","no-repeat").css("background-position","right"); 
     };
 });
+
+
+
+/*-------------------------four-show的js-css样式表--------------------------*/
+$(document).ready(function(){
+    var f_s_s_width=$("div.four-show-son").width()/1.78;
+    $("#four-show").find("div.four-show-son").css("height",f_s_s_width);
+})
