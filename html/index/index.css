@@ -40,19 +40,6 @@ img.bg {
   display:none;
 }
 
-img.prev {
-  position:absolute;
-  left:30px;
-  /*margin:50 50 50 50;*/
-  float:left;
-  opacity:0.2; 
-}
-img.next {
-  position:absolute;
-  right:30px;
-  float:right;
-  opacity:0.2; 
-}
 
 /**************************************pc版***********************************************/
 @media screen and (min-width:1024px){
@@ -62,6 +49,7 @@ img.next {
 }
 #header-son{
   position:fixed;
+  z-index:98;
   width:100%;
   background-color:#fff;
 }
@@ -83,7 +71,7 @@ img.next {
 }
 
 #nav{
-  z-index:0;
+  z-index:2;
   line-height:24px;
   list-style-type:none;
   background:#666;
@@ -152,7 +140,7 @@ img.bg {
   display:none;
   /*height:67px;*/
   background-color:#fff;
-  z-index:0;
+  z-index:98;
 }
 
 #nav{
@@ -183,7 +171,7 @@ img.bg {
   height:40px;
   margin-right:10px;
   right:0;
-  z-index:1;
+  z-index:99;
   background:url(https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/index/mune1.png);
   position:absolute;
 }
@@ -223,12 +211,64 @@ img.bg {
 
 
 /*-------------------------four-show的css样式表--------------------------*/
+.four-show-son{
+  overflow:hidden;
+}
+.four-show-son img{
+  width:100%;
+  position:relative;
+  z-index:-1;
+}
+
+.four-show-son:hover img{
+  transform: scale(1.1);
+  transition: all 1s ease 0s;
+  -webkit-transform: scale(1.1);
+  -webkit-transform: all 1s ease 0s;
+}
+
+.four-show-p1{
+  color:#fff;
+  font-size:25px;
+  position:static;
+  z-index:1; 
+  height:30px;
+  margin-left:10%;
+  /*border:1px solid #808080;*/
+}
+
+.four-show-p2{
+  color:#fff;
+  position:static;
+  z-index:1; 
+  display:none;
+  height:100px;
+  margin-top:2%;
+  margin-left:10%;
+  /*border:1px solid #808080;*/
+}
+
+
+.four-show-div{
+  position:absolute;
+  z-index:0;
+  background-color:rgba(80,80,80,0);
+}
+.four-show-div:hover {
+  background-color:rgba(90,90,90,0.4);
+}
+
+
+.four-show-div a{
+  text-decoration:none;
+}
+
 @media screen and (min-width:767px){
 
 #four-show{
   width:100%;
   height:1000px;
-  border:1px solid #808080;
+  /*border:1px solid #808080;*/
   /*margin:10px 2% 10px 2%;*/
 }
 
@@ -238,6 +278,19 @@ img.bg {
   border:1px solid #808080;
   margin:2% 2% 2% 2%;
 }
+.four-show-p1{
+  width:80%;
+}
+
+.four-show-p2{
+  width:80%;
+}
+
+.four-show-div{
+  width:46%;
+}
+
+
 }
 
 @media screen and (max-width:766px){
@@ -245,7 +298,6 @@ img.bg {
 #four-show{
   height:1800px;
   border:1px solid #808080;
-  /*margin:10px 2% 10px 2%;*/
 }
 
 .four-show-son{
@@ -254,4 +306,16 @@ img.bg {
   border:1px solid #808080;
   margin:2% 2% 2% 2%;
 }
+
+.four-show-p1{
+  width:80%;
+}
+.four-show-p2{
+  width:80%;
+}
+
+.four-show-div{
+  width:96%;
+}
+
 }

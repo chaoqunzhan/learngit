@@ -27,7 +27,6 @@
             _this.find(" img:eq(" + (nValue) + ")").fadeIn(fisher.fadeTime);
             _this.find(" img:eq(" + (oValue) + ")").fadeOut(fisher.fadeTime);
             oValue = nValue % count;
-            // alert(nValue);
         },
         fisher.autoplay);
         
@@ -45,14 +44,6 @@
             else{
                 _this.css("height",img_height1);
             }
-            //自适应左右箭头的大小
-            // var prev_width=$(window).width()*0.05;
-            // _this.find("img.prev").css("width",prev_width);
-            // _this.find("img.next").css("width",prev_width);
-            // //自适应左右箭头的垂直居中
-            // var prev_height=$(window).width()*0.15;
-            // _this.find("img.prev").css("margin-top",prev_height);
-            // _this.find("img.next").css("margin-top",prev_height);
         }
     };
 } (jQuery));
@@ -124,4 +115,18 @@ $(document).ready(function(){
 $(document).ready(function(){
     var f_s_s_width=$("div.four-show-son").width()/1.78;
     $("#four-show").find("div.four-show-son").css("height",f_s_s_width);
+    $("#four-show").find("div.four-show-div").css("height",f_s_s_width);
+    $("#four-show").find("p.four-show-p1").css("margin-top",f_s_s_width-150);
+    
+
+
+    hover_p(0);               //鼠标经过时显示文字
+    hover_p(1);
+    hover_p(2);
+    hover_p(3);
+    function hover_p(i){
+        $("#four-show").find("div.four-show-div:eq("+i+")").hover(function(){
+            $("#four-show").find("p.four-show-p2:eq("+i+")").slideToggle(300);
+        });
+    }    
 })
