@@ -206,6 +206,15 @@ img.bg {
   width:384px;
 }
 
+#guodu{
+  width:384px;
+}
+
+#entrance{
+  width:384px;
+}
+
+
 }
 
 
@@ -267,9 +276,10 @@ img.bg {
 
 #four-show{
   width:100%;
-  height:1000px;
-  /*border:1px solid #808080;*/
+  /*height:1000px;*/
+  border:1px solid #808080;
   /*margin:10px 2% 10px 2%;*/
+  float:left;
 }
 
 .four-show-son{
@@ -296,7 +306,7 @@ img.bg {
 @media screen and (max-width:766px){
 
 #four-show{
-  height:1800px;
+  /*height:1800px;*/
   border:1px solid #808080;
 }
 
@@ -319,3 +329,80 @@ img.bg {
 }
 
 }
+
+
+
+/*-------------------guodu的样式----------------------*/
+
+#guodu{
+  margin-top:50px;
+  background-color:#000;
+  
+  float:left;
+}
+
+.guodu-p{
+  color:#fff;
+  font-size:2.5vw ;
+  font-weight:bold;
+  font-style:;
+  padding-top:5%;
+  width:30%;
+  margin-left:18%;
+  float:left;
+}
+
+
+.guodu-div{
+  width:30%;
+  margin-left:18%;
+  float:left;
+  width:13%;
+  margin-left:4%;
+  background-color:#fff;
+}
+
+
+@media screen and (min-width:385px){
+#guodu{
+  width:100%;
+}
+}
+
+@media screen and (max-width:767px){
+.guodu-p{
+  width:50%;
+}
+}
+
+
+
+/*--------------------entrance的css样式---------------------*/
+
+@media screen and (min-width:385px){
+#entrance{
+  width:100%;
+}  
+}
+
+#entrance{
+  border:1px solid #808080;
+  height:500px;
+  float:left;
+  margin-top:2%;
+}
+
+.entr-kid{
+  float:left;
+  margin:0 2% 0 2%;
+  width:21%;
+  height:350px;
+  background-color:#dd0;
+}
+
+
+
+
+
+
+

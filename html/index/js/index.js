@@ -117,7 +117,10 @@ $(document).ready(function(){
     $("#four-show").find("div.four-show-son").css("height",f_s_s_width);
     $("#four-show").find("div.four-show-div").css("height",f_s_s_width);
     $("#four-show").find("p.four-show-p1").css("margin-top",f_s_s_width-150);
-    
+
+    var guodu_h=$(window).width()*0.18;
+    // $("#guodu").css("height",guodu_h);
+    $(".guodu-p").css("padding-top",guodu_h*0.08);
 
 
     hover_p(0);               //鼠标经过时显示文字
@@ -129,4 +132,11 @@ $(document).ready(function(){
             $("#four-show").find("p.four-show-p2:eq("+i+")").slideToggle(300);
         });
     }    
+})
+
+
+
+/*-------------------------guo的js-css样式表--------------------------*/
+$(document).ready(function(){
+     
 })
