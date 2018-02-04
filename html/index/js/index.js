@@ -138,5 +138,7 @@ $(document).ready(function(){
 
 /*-------------------------guo的js-css样式表--------------------------*/
 $(document).ready(function(){
-     
+    var kid_height=$(".entr-kid div").width()/0.7;
+    $(".entr-kid").css("height",kid_height);
+    $(".entr-font").css("height",kid_height);
 })

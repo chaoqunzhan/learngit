@@ -214,6 +214,10 @@ img.bg {
   width:384px;
 }
 
+#news{
+  width:384px;
+}
+
 
 }
 
@@ -367,6 +371,11 @@ img.bg {
 #guodu{
   width:100%;
 }
+
+#news{
+  width:100%;
+}
+
 }
 
 @media screen and (max-width:767px){
@@ -386,8 +395,6 @@ img.bg {
 }
 
 #entrance{
-  border:1px solid #808080;
-  height:500px;
   float:left;
   margin-top:2%;
 }
@@ -395,14 +402,82 @@ img.bg {
 .entr-kid{
   float:left;
   margin:0 2% 0 2%;
+  display:block;
+  position:relative;
+  -webkit-transform-style:preserve-3d;
+  -moz-transform-style:preserve-3d;
+  transform-style:preserve-3d;
+}
+
+.entr-img{
+  width:100%;
+  position:absolute;
+  backface-visibility:hidden;
+  -webkit-transition:all .5s ease-in-out;
+  -moz-transition:all .5s ease-in-out;
+  transition:all .5s ease-in-out
+}
+
+
+.entr-font{
+  width:100%;
+  background-color:#202020;
+  color:#fff;
+  position:absolute;
+  backface-visibility:hidden;
+  -webkit-transition:all .5s ease-in-out;
+  -moz-transition:all .5s ease-in-out;
+  transition:all .5s ease-in-out
+  -webkit-transform:rotateY(-180deg);
+  -moz-transform:rotateY(-180deg);
+  transform:rotateY(-180deg);
+  opacity:0;
+  font-size:1.3vw;
+  text-align:center;
+}
+
+.entr-kid:hover div.entr-img{
+  -webkit-transform:rotateY(180deg);
+  -moz-transform:rotateY(180deg);
+  transform:rotateY(180deg)
+}
+
+
+.entr-kid:hover div.entr-font{
+  -webkit-transform:rotateY(0);
+  -moz-transform:rotateY(0);
+  transform:rotateY(0);
+  opacity:1;
+}
+
+.entr-font h3{
+  margin-top:35%;
+}
+
+.entr-font p{
+  margin-top:35%;
+}
+
+
+@media screen and (min-width:767px){
+.entr-kid{
   width:21%;
-  height:350px;
-  background-color:#dd0;
+}
+}
+
+@media screen and (max-width:766px){
+.entr-kid{
+  width:46%;
+}
 }
 
 
 
 
-
-
-
+/*--------------------news的样式表-------------------*/
+#news{
+  margin-top:2%;
+  height:500px;
+  border:1px solid #808080;
+  float:left;
+}
