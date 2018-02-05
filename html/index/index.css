@@ -218,7 +218,13 @@ img.bg {
   width:384px;
 }
 
+#bottom{
+  width:384px;
+}
 
+#contact{
+  width:384px;
+}
 }
 
 
@@ -281,7 +287,7 @@ img.bg {
 #four-show{
   width:100%;
   /*height:1000px;*/
-  border:1px solid #808080;
+ 
   /*margin:10px 2% 10px 2%;*/
   float:left;
 }
@@ -311,7 +317,7 @@ img.bg {
 
 #four-show{
   /*height:1800px;*/
-  border:1px solid #808080;
+ 
 }
 
 .four-show-son{
@@ -373,6 +379,14 @@ img.bg {
 }
 
 #news{
+  width:100%;
+}
+
+#bottom{
+  width:100%;
+}
+
+#contact{
   width:100%;
 }
 
@@ -468,6 +482,7 @@ img.bg {
 @media screen and (max-width:766px){
 .entr-kid{
   width:46%;
+  margin-top:2%;
 }
 }
 
@@ -477,7 +492,97 @@ img.bg {
 /*--------------------news的样式表-------------------*/
 #news{
   margin-top:2%;
-  height:500px;
   border:1px solid #808080;
   float:left;
+}
+
+.n-video{
+  float:left;
+  width:46%;
+  margin:2% 2% 0% 2%;
+  border:1px solid #110;
+}
+
+.n-video h3{
+  font-size:1.3vw;
+}
+
+.n-video-kid{
+  width:90%;
+  margin:2% 5% 0% 5%;
+  border:1px solid #110;
+}
+
+.n-funny{
+  float:left;
+  margin:2% 2% 0% 2%;
+  border:1px solid #110;
+}
+
+.n-funny h3{
+  font-size:1.3vw;
+}
+
+
+@media screen and (min-width:767px){
+.n-video{
+  width:46%; 
+}
+
+.n-funny{
+  width:46%;
+}
+
+}
+
+@media screen and (max-width:767px){
+.n-video{
+  width:96%; 
+}
+
+.n-funny{
+  width:96%;
+}
+
+}
+
+
+
+/*------------------------contact的css样式表-------------------------*/
+
+#contact{
+  background-color:#808080;
+  float:left;
+  margin-top:10%;
+  /*height:100px;*/
+  color:#fff;
+  font-size:1.2vw;
+}
+
+.c-kid{
+  float:left;
+  width:15%;
+  margin:2% 5% 0 5%;
+  height:200px;
+  border:1px solid #fff;
+  line-height:200%;
+}
+
+.c-kid h3{
+  font-size:1.5vw;
+}
+
+.c-kid p{
+  font-size:1.5vw;
+}
+/*------------------------bottom的css样式表-------------------------*/
+
+#bottom{
+  background-color:#000;
+  float:left;
+  /*height:100px;*/
+  color:#fff;
+  font-size:1.2vw;
+  border:1px solid #808080;
+  text-align:center;
 }

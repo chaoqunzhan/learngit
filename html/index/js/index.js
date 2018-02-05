@@ -141,4 +141,11 @@ $(document).ready(function(){
     var kid_height=$(".entr-kid div").width()/0.7;
     $(".entr-kid").css("height",kid_height);
     $(".entr-font").css("height",kid_height);
+
+    var vk_height=$(".n-video-kid").width()/1.78;
+    $(".n-video-kid").css("height",vk_height);
+
+    var b_height=$(window).width()*0.04;
+    $("#bottom").css("height",b_height);
+    // $("#bottom").css("line-height",b_height);
 })
