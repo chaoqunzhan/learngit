@@ -3,7 +3,7 @@
 // 首页导航栏的HTML代码写入   2018-02-24
 function header(){
      document.write(
-        '<div class=\"header\">'+
+        '<div id=\"header\">'+
         '<div id=\"header-son\">'+
           '<div class=\"title\">'+
             '<img src=\"https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/index/W.png\"  width=\"100%\">'+

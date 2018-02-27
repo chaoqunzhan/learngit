@@ -1,3 +1,10 @@
+@charset"utf-8";
+
+
+*{
+  margin:0;padding:0;
+  box-sizing:border-box;
+}
 
 #one{              
   background: url(https://raw.githubusercontent.com/chaoqunzhan/learngit/master/html/images/index-bg.jpg) center;
@@ -6,14 +13,76 @@
   width:100%;            
 }
 
-
-@media screen and (min-width:767px){
-
-.zt{
-  width:90%;
-  border:1px solid #d0d0d0;
-  margin:0 auto;
+#life{
+  width:100%;
+  height:1000px;
+  background-color:#fff;
 }
 
+@media screen and (min-width:767px){
+.describe{
+  float:left;
+  width:40%;
+  height:800px;
+  /*border:1px solid #000000;*/
+  margin:5%;
+}
+.display{
+  float:right;
+  width:40%;
+  margin:5%;
+  /*border:1px solid #000000;*/
+}
+
+#life h3{
+  margin-top:10%;
+  font-size:2vw;
+  line-height:250%;
+  font-weight:500;
+}
+#life p{
+  font-size:1.3vw;
+  line-height:250%;
+}
+
+}
+
+
+@media screen and (max-width:767px){
+.describe{
+  float:left;
+  width:90%;
+  height:800px;
+  border:1px solid #000000;
+  margin:5%;
+}
+.display{
+  float:right;
+  width:90%;
+  margin:5%;
+  border:1px solid #000000;
+}
+
+#life h3{
+  margin-top:10%;
+  font-size:4vw;
+  font-weight:500;
+}
+
+}
+
+
+
+
+
+
+
+
+
+/*宽度小于385px的效果*/
+@media screen and (max-width:384px){
+#life{
+  width:384px;
+}
 
 }
