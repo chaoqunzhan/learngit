@@ -9,14 +9,11 @@ h1{
 }
 
 #bonner{
-	width:100%;
-	height:200px;
-	background-color:#f12;
+	width:100%;	
 }
 
 #main{
-	/*height:800px;*/
-	border:1px solid #808080;
+	
 }
 
 #main a{
@@ -28,8 +25,6 @@ h1{
 }
 
 #sidebar{
-	/*height:800px;*/
-	border:1px solid #808080;
 	margin-bottom:10%;
 }
 
@@ -43,7 +38,6 @@ h1{
 	width:100%;
 	text-align:center;
 	line-height:250%;
-	border:1px solid #3f2;
 }
 
 .content{
@@ -51,7 +45,6 @@ h1{
 	width:100%;
 	text-align:justify;
 	line-height:200%;
-	border:1px solid #9f2;
 }
 
 .content p {
@@ -68,7 +61,6 @@ h1{
 #about-me{
 	width:100%;
 	margin-top:10%;
-/*	border:1px solid #0f7;*/
 }
 #about-me h3{
 	line-height:200%;
@@ -79,7 +71,6 @@ h1{
 	width:100%;
 	float:left;
 	margin-top:20%;
-/*	border:1px solid #0f7;*/
 }
 #weibo h3{
 	line-height:200%;
