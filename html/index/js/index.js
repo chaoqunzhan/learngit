@@ -105,7 +105,7 @@ $(document).ready(function(){
         $("#nav li:eq(2)").css("background","url(https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/index/mune3.png)").css("background-repeat","no-repeat").css("background-position","right"); 
         $("#nav li:eq(6)").css("background","url(https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/index/mune3.png)").css("background-repeat","no-repeat").css("background-position","right"); 
         $("#nav li:eq(9)").css("background","url(https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/index/mune3.png)").css("background-repeat","no-repeat").css("background-position","right"); 
-        $("#nav li:eq(14)").css("background","url(https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/index/mune4.png)").css("background-repeat","no-repeat").css("background-position","right"); 
+        $("#nav li:eq(15)").css("background","url(https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/index/mune4.png)").css("background-repeat","no-repeat").css("background-position","right"); 
     };
 });
 

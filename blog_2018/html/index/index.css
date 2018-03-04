@@ -11,7 +11,7 @@
   background-repeat:no-repeat;
   background-attachment:fixed;
   width:100%;
-  height:2600px; 
+ /* height:2600px;*/ 
   top:0; 
  /* border:1px solid #000;*/             
 }
@@ -123,6 +123,7 @@ img.bg {
 }
 #nav li.mouseover ul{
   left:auto;          /*当鼠标经过时，把ul设为正常值，显示子目录*/
+  background:#e0e0e0;
 }
 #re-mune{
   display:none;
@@ -576,7 +577,7 @@ img.bg {
 #contact{
   background-color:#808080;
   float:left;
-  margin-top:10%;
+ 
   /*height:100px;*/
   color:#fff;
   font-size:1.2vw;
@@ -625,6 +626,6 @@ img.bg {
   /*height:100px;*/
   color:#fff;
   font-size:1.2vw;
-  border:1px solid #808080;
+  
   text-align:center;
 }
