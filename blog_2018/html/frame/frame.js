@@ -180,7 +180,7 @@ function sidebar_frist(){
 
 
 // 次页中sidebar中的hot-relative更新  2018-03-02
-function sidebar_frist(){
+function sidebar_second(){
     document.write(
         
         '<div id=\"relative\">'+
