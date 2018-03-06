@@ -1,0 +1,155 @@
+ @media screen and (min-width:480px){
+
+
+body{
+	width:360px;
+	margin:0 auto;
+}
+.contain{
+	height:640px;
+	width:360px;
+	margin:0 auto;
+	/*border:1px solid #808080;*/
+	/*background-image:url(https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/calculate_day1.jpg);*/
+}
+
+.text1{
+	width:100%;
+	height:220px;
+	/*border:1px solid #808080;*/
+}
+.text10{
+	height:10px;
+	margin:0 auto;
+	font-family:"Microsoft YaHei";
+	font-size:25px;
+	color:#fff;
+	text-shadow:5px 5px 5px #000;
+	text-align:center;
+}.text11{
+	width:50%;
+	height:70px;
+	/*border:1px solid #808080;*/
+	margin:0 auto;
+	font-family:"Microsoft YaHei";
+	font-size:16px;
+	color:#808080;
+	/*text-shadow:5px 5px 5px #000;*/
+	text-align:center;
+}
+.text12{
+	width:50%;
+    height:30px;
+	/*border:1px solid #808080;*/
+	margin:0 auto;
+	font-family:"STXingkai";
+	font-size:30px;
+	color:#fff;
+	text-shadow:5px 5px 5px #000;
+	text-align:center;
+}
+.text2{
+	width:100%;
+	height:300px;
+	/*border:1px solid #fff;*/
+	font-family:"STXingkai";
+	font-size:20px;
+	line-height:200%;
+	color:#fff;
+	text-shadow:2px 2px 2px #000;
+	text-align:center;
+}
+.text3{
+	width:100px;
+	float:right;
+	height:100px;
+	/*border:1px solid #8da080;*/
+}
+
+.but1{
+	width:60px;
+}
+.but2{
+	width:30px;
+}
+}
+
+
+
+
+ @media screen and (max-width:480px){
+
+
+body{
+	width:100%;
+	margin:0 auto;
+}
+.contain{
+	height:640px;
+	width:100%;
+	margin:0 auto;
+	background-size:cover;
+	/*border:1px solid #808080;*/
+	/*background-image:url(https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/calculate_day1.jpg);*/
+}
+
+.text1{
+	width:100%;
+	height:220px;
+	/*border:1px solid #808080;*/
+}
+.text10{
+	height:10px;
+	margin:0 auto;
+	font-family:"Microsoft YaHei";
+	font-size:25px;
+	color:#fff;
+	text-shadow:5px 5px 5px #000;
+	text-align:center;
+}.text11{
+	width:50%;
+	height:70px;
+	/*border:1px solid #808080;*/
+	margin:0 auto;
+	font-family:"Microsoft YaHei";
+	font-size:16px;
+	color:#808080;
+	/*text-shadow:5px 5px 5px #000;*/
+	text-align:center;
+}
+.text12{
+	width:50%;
+    height:30px;
+	/*border:1px solid #808080;*/
+	margin:0 auto;
+	font-family:"STXingkai";
+	font-size:30px;
+	color:#fff;
+	text-shadow:5px 5px 5px #000;
+	text-align:center;
+}
+.text2{
+	width:100%;
+	height:300px;
+	/*border:1px solid #fff;*/
+	font-family:"STXingkai";
+	font-size:20px;
+	line-height:200%;
+	color:#fff;
+	text-shadow:2px 2px 2px #000;
+	text-align:center;
+}
+.text3{
+	width:100px;
+	float:right;
+	height:80px;
+	/*border:1px solid #8da080;*/
+}
+
+.but1{
+	width:60px;
+}
+.but2{
+	width:30px;
+}
+}

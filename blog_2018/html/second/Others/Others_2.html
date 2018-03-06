@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC>
+<head>
+<meta content="width=device-width,user-scalable=yes" name="viewport"> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>VIP视频免费看教程</title>
+<link href="../../index/index.css"  rel="stylesheet" type="text/css" />
+<link href="../second.css"  rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../index/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../index/js/index.js"></script>
+<script type="text/javascript" src="../../frame/frame.js"></script>
+<style type="text/css">textarea{width:100%;height:350px;}</style>
+</head>
+
+<body id="one">
+
+<script type="text/javascript">second_header()</script>    <!-- 用js的方法集成导航栏 -->
+
+<div id="bonner"><img src="https://raw.githubusercontent.com/chaoqunzhan/learngit/master/blog_2018/images/learning/bonner_learning.jpg" alt="" width="100%"></div>
+<div id="main">
+    <div class="adress"><p>当前位置:
+        <a href="../../index.html">首页</a>>
+        <a href="../../Others.html">Others</a>></p></div>
+    <div class="main-title">
+        <h1>Win10的813错误</h1>
+        <p>时间:2017-09-27&nbsp;&nbsp;作者:小提群</p>
+    </div>
+    <div class="content">
+        <p>回想了一下，出现813错误的原因，应该是频繁地进行了网络拨号导致的，然而本质错误是什么？我也还没搞明白。但是可以肯定的是错误出现在电脑的有线网卡上，可能是网卡的启动出现了错误的协议之类的。话不多说，开始解决问题的步骤：
+        <img src="https://t1.picb.cc/uploads/2017/09/27/5DlpW.png" alt="5DlpW.png" border="0" />
+        <h4>步骤如下：</h4>
+        <p>第一步：打开【控制面板】，找到【网络连接】并打开，选中如下图中的【宽带连接】，点击右键->删除
+        <img src="https://t1.picb.cc/uploads/2017/09/27/5Dp0r.jpg" alt="">
+        <p>第二步：同样在【控制面板】中找到【设备管理器】，在设【备管理器】中打开【网络适配器】，右键禁用有线网卡【Realtek PCle FE Family Controller】，这一连串的英文真的费劲，所以大家有时间还是多学点英语，有备无患。</p> 
+        <img src="https://t1.picb.cc/uploads/2017/09/27/5D0oJ.jpg" alt=""> 
+        <p>第三步：拔掉网线，这是必须要的操作，不然前面的步骤就白费了</p>
+        <p>第四步：重启电脑，打开刚刚禁用的有线网卡【Realtek PCle FE Family Controller】</p>
+        <p>第五步：建立新的网络连接，就是重新拨号。</p>
+        <p>不出意外的话，问题应该可以解决了！</p>
+    </div>
+    <div class="prec-next"><p><!-- 上一篇:
+    <a href="">xxx</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->上一篇:
+    <a href="Others_1.html">VIP视频免费看教程</a>
+    </p></div>
+</div>    
+<div id="sidebar">
+    <div id="about-me">
+        <h3>关于作者</h3>
+        <div id="writer">
+            <div class="log"><img src="https://raw.githubusercontent.com/chaoqunzhan/learngit/master/blog_2018/images/index/%E7%AD%BE%E5%90%8D1.jpg" alt="" width="100%"></div>
+            <h4><a href="../../about.html">小提群</a></h4>
+            <h5><img src="https://raw.githubusercontent.com/chaoqunzhan/learngit/master/blog_2018/images/index/address.png" alt="" width="15px">厦门</h5>
+            <p>小时候喜欢简易的图形组合，后来喜欢上了PS的照片合成,现在在网页上堆砌图形和文字，可以说有个兴趣从未改变！</p>
+        </div>
+    </div>
+    <script type="text/javascript">sidebar_second()</script>
+    <div id="weibo">
+        <h3>微博关注</h3>
+        <div class="img-weibo"><img src="https://raw.githubusercontent.com/chaoqunzhan/learngit/master/html/images/weibo.gif" alt="" width="96%"></div>
+    </div>
+</div>
+
+<!-- 底部HTML代码写入 -->
+<script type="text/javascript">bottom()</script>
