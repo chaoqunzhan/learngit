@@ -38,7 +38,7 @@ function header(){
                 '</ul>'+
             '</li>'+
 
-            '<li><a href=\"#\">SAYING</a></li>'+
+            '<li><a href=\"liuyan.html\">SAYING</a></li>'+
 
             '</ul>'+
           '</div>'+
@@ -85,7 +85,7 @@ function second_header(){
                 '</ul>'+
             '</li>'+
 
-            '<li><a href=\"#\">SAYING</a></li>'+
+            '<li><a href=\"liuyan.html\">SAYING</a></li>'+
 
             '</ul>'+
           '</div>'+
@@ -164,16 +164,17 @@ function sidebar_frist(){
 
         '<div id=\"new\">'+
             '<h3>最近更新</h3>'+
-            '<li><a href=\"\">开啊</a></li>'+
-            '<li><a href=\"\">开啊哈师大</a></li>'+
-            '<li><a href=\"\">开啊哈师大</a></li>'+
+            '<li><a href=\"second/L/L_1.html\">锅壳——从CCTV5到CCTV6的男人</a></li>'+
+            '<li><a href=\"second/Sighting/Sighting_2.html\">从五老峰到植物园</a></li>'+
+            '<li><a href=\"second/HTML+CSS/HTML+CSS_2.html\">PHP+MySQL留言板</a></li>'+
+            '<li><a href=\"second/Funny/Funny_2.html\">回首17，步入18</a></li>'+
         '</div>'+
 
         '<div id=\"video\">'+
             '<h3>精彩视频</h3>'+
-            '<li><a href=\"\">开啊哈师大</a></li>'+
-            '<li><a href=\"\">开啊哈师大</a></li>'+
-            '<li><a href=\"\">开啊哈师大</a></li>'+
+            '<li><a href=\"second/L/L_1.html\">锅壳——从CCTV5到CCTV6的男人</a></li>'+
+            '<li><a href=\"\">万能的小分队</a></li>'+
+            
         '</div>'       
 )}
 
