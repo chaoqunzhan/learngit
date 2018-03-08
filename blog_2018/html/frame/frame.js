@@ -108,15 +108,15 @@ function bottom(){
             
             '<div class=\"c-kid\">'+
                 '<h3>联系我们 >></h3>'+
-                '<p><img src=\"https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/index/1.png\" alt=\"\" width=\"20%\"></p>'+
-                '<p><img src=\"https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/index/2.png\" alt=\"\" width=\"20%\"></p>'+
-                '<p><img src=\"https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/index/3.png\" alt=\"\" width=\"20%\"></p>'+
+                '<p><a href=\"https://weibo.com/2732185503/profile?rightmod=1&wvr=6&mod=personinfo&is_all=1\" ><img src=\"https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/index/1.png\" alt=\"\" width=\"20%\"></a></p>'+
+                '<p><a href=\"\" ><img src=\"https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/index/2.png\" alt=\"\" width=\"20%\"></a></p>'+
+                '<p><a href=\"\" ><img src=\"https://raw.githubusercontent.com/chaoqunzhan/learngit/master/images/index/3.png\" alt=\"\" width=\"20%\"></a></p>'+
             '</div>'+
 
             '<div class=\"c-kid\">'+
                 '<h3>技术支持 >></h3>'+
                 '<p>阿里云学生机</p>'+
-                '<p>github/chaoqunzhan</p>'+
+                '<p><a href="https://github.com/chaoqunzhan">github/chaoqunzhan</a></p>'+
                 '<p>上上届师兄留下的电脑</p>'+
             '</div>'+
 
@@ -185,18 +185,16 @@ function sidebar_second(){
     document.write(
         
         '<div id=\"relative\">'+
-            '<h3>相关推荐</h3>'+
-            '<li><a href=\"\">开啊</a></li>'+
-            '<li><a href=\"\">开啊哈师大</a></li>'+
-            '<li><a href=\"\">开啊哈师大</a></li>'+
+            '<h3>站长推荐</h3>'+
+            '<li><a href=\"../Funny/Funny_2.html\">回首17，步入18</a></li>'+
+            '<li><a href=\"../HTML+CSS/HTML+CSS_2.html\">PHP+MySQL留言板</a></li>'+
         '</div>'+
 
         '<div id=\"hot\">'+
             '<h3>热门文章</h3>'+
             '<ol>'+
-            '<li><a href=\"\">开啊哈师大</a></li>'+
-            '<li><a href=\"\">开啊哈师大</a></li>'+
-            '<li><a href=\"\">开啊哈师大</a></li>'+
+            '<li><a href=\"../Funny/Funny_2.html\">回首17，步入18</a></li>'+
+            '<li><a href=\"../HTML+CSS/HTML+CSS_2.html\">PHP+MySQL留言板</a></li>'+
             '</ol>'+
         '</div>'       
 )}

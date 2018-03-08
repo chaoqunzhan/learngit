@@ -516,7 +516,8 @@ img.bg {
 /*--------------------news的样式表-------------------*/
 #news{
   margin-top:2%;
-  border:1px solid #808080;
+  margin-bottom:2%;
+  /*border:1px solid #808080;*/
   float:left;
 }
 
@@ -524,7 +525,7 @@ img.bg {
   float:left;
   width:46%;
   margin:2% 2% 0% 2%;
-  border:1px solid #110;
+  /*border:1px solid #110;*/
 }
 
 .n-video h3{
@@ -540,7 +541,7 @@ img.bg {
 .n-funny{
   float:left;
   margin:2% 2% 0% 2%;
-  border:1px solid #110;
+  /*border:1px solid #110;*/
 }
 
 .n-funny h3{

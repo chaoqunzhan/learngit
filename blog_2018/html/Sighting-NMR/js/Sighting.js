@@ -12,3 +12,12 @@ $(document).ready(function(){
 		$(".list-enter").css("height",w_listShow/1.5*0.35);
 	}
 })
+
+
+$(document).ready(function(){
+	var h_bonner_liuyan=$(window).width()/4;
+	var h_bonner_liuyan1=$(window).width()/2;
+	if($(window).width()>676){
+	$("#bonner-liuyan").css("height",h_bonner_liuyan);}	
+	else{$("#bonner-liuyan").css("height",h_bonner_liuyan1);}
+})
