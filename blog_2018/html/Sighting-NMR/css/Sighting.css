@@ -52,6 +52,12 @@
 	/*border:1px solid #f444f2;*/
 }
 
+.list-font1{
+	width:70%;
+	float:left;
+	/*border:1px solid #f444f2;*/
+}
+
 .list-enter{
 	width:100%;
 	float:left;
@@ -62,7 +68,10 @@
 	width:69%;
 	float:right;
 }
-
+.list-describe1{
+	width:100%;
+	float:left;
+}
 
 #tag{
 	margin-top:10%;
