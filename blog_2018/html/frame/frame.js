@@ -85,7 +85,7 @@ function second_header(){
                 '</ul>'+
             '</li>'+
 
-            '<li><a href=\"liuyan.html\">SAYING</a></li>'+
+            '<li><a href=\"../../liuyan.html\">SAYING</a></li>'+
 
             '</ul>'+
           '</div>'+
