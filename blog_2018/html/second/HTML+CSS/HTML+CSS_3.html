@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC>
+<head>
+<meta content="width=device-width,user-scalable=yes" name="viewport"> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>关于网页中插入视频的问题</title>
+<link href="../../index/index.css"  rel="stylesheet" type="text/css" />
+<link href="../second.css"  rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../index/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../index/js/index.js"></script>
+<script type="text/javascript" src="../../frame/frame.js"></script>
+<style type="text/css">textarea{width:100%;height:250px;}</style>
+</head>
+
+<body id="one">
+
+<script type="text/javascript">second_header()</script>    <!-- 用js的方法集成导航栏 -->
+
+<div id="bonner"><img src="https://raw.githubusercontent.com/chaoqunzhan/learngit/master/blog_2018/images/learning/bonner_learning.jpg" alt="" width="100%"></div>
+<div id="main">
+    <div class="adress"><p>当前位置:
+        <a href="../../index.html">首页</a>>
+        <a href="../../HTML.html">HTML+CSS</a>></p></div>
+    <div class="main-title">
+        <h1>关于网页中插入视频的问题</h1>
+        <p>时间:2018-03-13&nbsp;&nbsp;作者:小提群</p>
+    </div>
+    <div class="content">
+        <h3>object、embed、video、audio标签的区别</h3>
+        <p>在HTML5中的object、embed、video、audio标签都可以添加视频或音频文件,但是它们之间还是有着细微的区别，如下：</p>
+        <p>object和embed用来添加视频或音频的时候，在页面加载后是自动播放的，不能进行手动控制播放；对于它们的height和width属性，是可以任意更改的，不受视频的比例影响。</p>
+        <p>video和audio中,可以通过改变autoplay的属性来控制播放，具有比较好的用户体验；播放控制条是自带的,而且一直显示在播放的固定位置；在调整容器的大小方面,video标签会相应的进行等比缩放,你更改其中的width或者height另一个也会进行变动，对于audio标签,只有width属性,更改height时,展示形式为调整它相对于容器的高度。</p>
+        <p>&nbsp;</p>
+        <h3>用video标签实现视频的外链插入网页</h3>
+        <p>在做网站的时候，有时候要插入视频，这个时候有两个问题：一个是像我们这种个人的网站或者博客租用的虚拟空间有限，如果把视频也上传到虚拟空间上，那么空间很快会被占满；另一个问题就是视频加载速度的问题，如果所有的信息都来自于同一台主机，那么速度可想而知，肯定相当的不理想。</p>
+        <p>考虑到上面所提的两个问题，在视频的插入方法，参考了图片外链的方式实现，可以把视频上传到各大视频网站上，然后链接到我们的网页中，这里以秒拍为例，简单介绍一下方法：</p>
+        <p>1、找到相应的视频，就是已经上传到秒拍的视频，用网页打开相应的页面</p>
+        <img src="" alt="">
+        <p>2、打开浏览器的开发者工具，鼠标右击视频，选择审查元素，就能在elements中看到视频的地址</p>
+        <p>3、复制该视频的地址到你的网页中video标签的src中，在地址前加上https:</p>
+        <p>4、相关代码和效果如下：</p>
+    </div>
+    <div class="prec-next"><p><!-- 上一篇:
+    <a href="">xxx</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->上一篇:
+    <a href="HTML+CSS_1.html">PHP+MySQL留言板</a>
+    </p></div>
+</div>    
+<div id="sidebar">
+    <div id="about-me">
+        <h3>关于作者</h3>
+        <div id="writer">
+            <div class="log"><img src="https://raw.githubusercontent.com/chaoqunzhan/learngit/master/blog_2018/images/index/%E7%AD%BE%E5%90%8D1.jpg" alt="" width="100%"></div>
+            <h4><a href="../../about.html">小提群</a></h4>
+            <h5><img src="https://raw.githubusercontent.com/chaoqunzhan/learngit/master/blog_2018/images/index/address.png" alt="" width="15px">厦门</h5>
+            <p>小时候喜欢简易的图形组合，后来喜欢上了PS的照片合成,现在在网页上堆砌图形和文字，可以说有个兴趣从未改变！</p>
+        </div>
+    </div>
+    <script type="text/javascript">sidebar_second()</script>
+    <div id="weibo">
+        <h3>微博关注</h3>
+        <div class="img-weibo"><img src="https://raw.githubusercontent.com/chaoqunzhan/learngit/master/html/images/weibo.gif" alt="" width="96%"></div>
+    </div>
+</div>
+
+<!-- 底部HTML代码写入 -->
+<script type="text/javascript">bottom()</script>
