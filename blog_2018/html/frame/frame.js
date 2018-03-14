@@ -151,9 +151,9 @@ function sidebar_frist(){
                 '<li><a href=\"Funny.html\">Funny(2)</a></li>'+
                 '<li><a href=\"HALA.html\">Hala Madrid(4)</a></li>'+
                 '<li><a href=\"HALA.html\">C.Ronaldo(1)</a></li>'+
-                '<li><a href=\"L.html\">L.A.Lakers(0)</a></li>'+
-                '<li><a href=\"HTML.html\">HTML(2)</a></li>'+
-                '<li><a href=\"HTML.html\">CSS(2)</a></li>'+
+                '<li><a href=\"L.html\">L.A.Lakers(1)</a></li>'+
+                '<li><a href=\"HTML.html\">HTML(3)</a></li>'+
+                '<li><a href=\"HTML.html\">CSS(3)</a></li>'+
                 '<li><a href=\"Javascript.html\">Javascript(1)</a></li>'+
                 '<li><a href=\"Photoshop.html\">Photoshop(2)</a></li>'+
                 '<li><a href=\"Photoshop.html\">After Effect(0)</a></li>'+
@@ -164,6 +164,7 @@ function sidebar_frist(){
 
         '<div id=\"new\">'+
             '<h3>最近更新</h3>'+
+            '<li><a href=\"second/HTML+CSS/HTML+CSS_3.html\">关于网页中插入视频的问题</a></li>'+
             '<li><a href=\"second/L/L_1.html\">锅壳——从CCTV5到CCTV6的男人</a></li>'+
             '<li><a href=\"second/Sighting/Sighting_2.html\">从五老峰到植物园</a></li>'+
             '<li><a href=\"second/HTML+CSS/HTML+CSS_2.html\">PHP+MySQL留言板</a></li>'+
@@ -173,8 +174,8 @@ function sidebar_frist(){
         '<div id=\"video\">'+
             '<h3>精彩视频</h3>'+
             '<li><a href=\"second/L/L_1.html\">锅壳——从CCTV5到CCTV6的男人</a></li>'+
-            '<li><a href=\"\">万能的小分队</a></li>'+
-            
+            '<li><a href=\"index.html\">万能的小分队</a></li>'+
+            '<li><a href=\"second/HTML+CSS/HTML+CSS_3.html\">关于网页中插入视频的问题</a></li>'+
         '</div>'       
 )}
 
@@ -193,6 +194,7 @@ function sidebar_second(){
         '<div id=\"hot\">'+
             '<h3>热门文章</h3>'+
             '<ol>'+
+            '<li><a href=\"second/HTML+CSS/HTML+CSS_3.html\">关于网页中插入视频的问题</a></li>'+
             '<li><a href=\"../Funny/Funny_2.html\">回首17，步入18</a></li>'+
             '<li><a href=\"../HTML+CSS/HTML+CSS_2.html\">PHP+MySQL留言板</a></li>'+
             '</ol>'+
