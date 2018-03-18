@@ -2,7 +2,7 @@
 <head>
 <meta content="width=device-width,user-scalable=yes" name="viewport"> 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>简洁二级下拉导航栏</title>
+<title>jQuery图片自动轮播效果</title>
 <link href="../../index/index.css"  rel="stylesheet" type="text/css" />
 <link href="../second.css"  rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="../../index/js/jquery-1.9.1.min.js"></script>
@@ -19,153 +19,48 @@
 <div id="main">
     <div class="adress"><p>当前位置:
         <a href="../../index.html">首页</a>>
-        <a href="../../HTML+CSS.html">HTML+CSS</a>></p></div>
+        <a href="../../Javascript.html">Javascript</a>></p></div>
     <div class="main-title">
-        <h1> HTML+css+js导航栏</h1>
-        <p>时间:2017-11-22&nbsp;&nbsp;作者:小提群</p>
+        <h1>jQuery图片自动轮播效果</h1>
+        <p>时间:2018-03-16&nbsp;&nbsp;作者:小提群</p>
     </div>
     <div class="content">
-        <p> 一个简单的网页下拉导航栏制作，主要用到HTML和css还有几句js代码。其实这个效果完全可以不用到js的，只不过代码会比较复杂。用js可以起到简化代码的作用</p>
-        <h4>第一部分，HTML代码(daohanglan.html)</h4>
-        <textarea class="tu2" readonly="readonly">
-            <!DOCTYPE html PUBLIC>
-            <html>
-            <head>
-            <meta charset="utf-8">
-            <meta http-equiv="Content-Type" content="text/html; charset=gb2312"/> 
-            <script type="text/javascript" src="xiala.js"></script>
-            <link rel="stylesheet" href="style.css" type="text/css">
-            <title>下拉菜单特效</title>
-            </head>
-            <body>
-            <ul id="nav">
-                <li><a>菜单项A</a>
-                    <ul>
-                        <li><a href="菜单页面的地址">菜单项A1</a></li>
-                        <li><a href="菜单页面的地址">菜单项A2</a></li>
-                        <li><a href="菜单页面的地址">菜单项A3</a></li>
-                        <li><a href="菜单页面的地址">菜单项A4</a></li>
-                    </ul>
-                </li>
-
-                <li><a>菜单项B</a>
-                    <ul>
-                        <li><a href="菜单页面的地址">菜单项B1</a></li>
-                        <li><a href="菜单页面的地址">菜单项B2</a></li>
-                        <li><a href="菜单页面的地址">菜单项B3</a></li>
-                        <li><a href="菜单页面的地址">菜单项B4</a></li>
-                    </ul>
-                </li>
-
-                <li><a>菜单项C</a>
-                    <ul>
-                        <li><a href="菜单页面的地址">菜单项C1</a></li>
-                        <li><a href="菜单页面的地址">菜单项C2</a></li>
-                        <li><a href="菜单页面的地址">菜单项C3</a></li>
-                        <li><a href="菜单页面的地址">菜单项C4</a></li>
-                    </ul>
-                </li>
-
-                <li><a>菜单项D</a>
-                    <ul>
-                        <li><a href="菜单页面的地址">菜单项D1</a></li>
-                        <li><a href="菜单页面的地址">菜单项D2</a></li>
-                        <li><a href="菜单页面的地址">菜单项D3</a></li>
-                        <li><a href="菜单页面的地址">菜单项D4</a></li>
-                    </ul>
-                </li>
+        <p>总结一下整个轮播效果的实现过程，以下分为几个部分：</p>
+        <h4>用到的jQuery函数，css样式等：</h4>
+        <p>1、setInterval("调用的函数名",周期性调用函数之间间隔的毫秒数)</p>
+        <p>2、animate的使用方法：$(selector).animate({params},speed,callback);</p>
+        <div style="width:90%;margin-left:10%">
+            <ul >
+                <li>params:必选，定义形成动画的css属性</li>
+                <li>speed:可选，规定效果的时长速度</li>
+                <li>callback:可选，是动画完成后执行的函数名</li>
             </ul>
-
-            </body>
-            </html>
-        </textarea>
-        
-        <p>HTML的部分主要用在表格的建立和导航栏的排版</p>
-        <h4>第二部分，css样式表（style.css）:</h4>
-        <textarea  class="tu2" readonly="readonly">                       
-            *{
-                margin:0;padding:0;
-            }
-
-            body{
-                font-size:12px;
-            }
-
-            a{
-                display: block;
-                color:#666;
-                width:80px;
-                text-align:center;
-                text-decoration: none;
-            }
-
-            a:hover {
-                color:#FFF;
-                background:#43a4fd;
-            }
-
-
-            /*主菜单样式*/
-            #nav{
-                line-height:24px;
-                list-style-type:none;
-                background:#666;
-                margin:100px 100px;
-
-            }
-
-            #nav li{
-                float:left;
-                width:80px;
-                background:#CCC;
-                border:1px solid #FFF;
-             -webkit-box-shadow: 3px 3px 5px #ced9e3; //设置背景阴影
-              -moz-box-shadow: 3px 3px 5px #ced9e3;
-            }
-
-            #nav li ul{
-                line-height:24px;
-                position:absolute;
-                left:-1000px;                //把ul的起始位置设为-1000，
-                list-style-type:none;   //用于开始鼠标没经过的时，隐藏子目录
-                text-align:left;
-                width:80px;
-            }
-
-            #nav li ul li{
-                background:#bfdffd;
-            }
-
-            #nav li ul li a{
-                width:80px;
-                text-align:center;
-                padding-left:0px;
-            }
-            #nav li.mouseover ul{
-                left:auto;          //当鼠标经过时，把ul设为正常值，显示子目录
-            }
-        </textarea> 
-
-        <p>css样式才是本文的重点，主要用于导航栏的效果设计，包括大小、位置、背景、阴影还有做到的隐藏和展示等。</p>
-        <h4>第三部分，js脚本的应用（xiaka.js）</h4>
-        <textarea class="tu3" readonly="readonly">
-            function makemune(){
-                var items = document.getElementById("nav").getElementsByTagName("li"); /*获取HTML中所有的二级li标签*/  
-                    for (var i=0; i<items.length; i++) {                  
-                        items[i].onmouseover=function() {          /*采用for循环的方式给li标签添加鼠标经过时的样式表*/
-                        this.className="mouseover"; 
-                        } 
-                        items[i].onmouseout=function() { 
-                        this.className=""; 
-                        } 
-                }
-            }
-            window.onload=makemune;      /*当进入网页时，自动执行makemune函数*/
-        </textarea>
+        </div>
+        <p>3、css中的position属性，其中包括：</p>
+        <div style="width:90%;margin-left:10%">
+            <ul >
+                <li>absolute:生成绝对定位的元素，相对于static定位以外的第一个父元素进行定位。元素的位置通过 "left", "top", "right" 以及 "bottom" 属性进行规定。</li>
+                <li>relative:生成相对定位的元素，相对于其正常位置进行定位。因此，"left:20" 会向元素的 LEFT 位置添加 20 像素。</li>
+                <li>fixed:生成绝对定位的元素，相对于浏览器窗口进行定位。元素的位置通过 "left", "top", "right" 以及 "bottom" 属性进行规定。</li>
+                <li>static:默认值。没有定位，元素出现在正常的流中（忽略 top, bottom, left, right 或者 z-index 声明）。</li>
+                <li>inherit:规定应该从父元素继承 position 属性的值。</li>
+            </ul>   
+        </div>
+        <p>4、css中的样式选择器nth-child、first-child、last-child</p>
+        <div style="width:90%;margin-left:10%">
+            <ul >
+                <li>first-child表示选择列表中的第一个标签</li>
+                <li>last-child表示选择列表中的最后一个标签</li>
+                <li>nth-child(n)表示选择列表中的第n个标签</li>
+            </ul>   
+        </div>
+        <h4>完整代码：</h4>
+        <p><a href="https://pan.baidu.com/s/1zOUV7iRCdhuZOuLWTYSriQ">百度网盘：jQuery图片自动轮播效果</a></p>
+        <p>密码：3pvm</p>
     </div>
     <div class="prec-next"><p><!-- 上一篇:
-    <a href="">xxx</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->下一篇:
-    <a href="HTML+CSS_2.html">PHP+MySQL留言板</a>
+    <a href="">xxx</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->上一篇:
+    <a href="calculate.html">出生到现在的天数</a>
     </p></div>
 </div>    
 <div id="sidebar">
