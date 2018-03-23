@@ -68,15 +68,15 @@
 
 .describe1{
   float:right;
-  width:50%;
+  width:25%;
   
   margin-top:2%;
   margin-right:10%;
 }
 .display1{
   float:left;
-  width:25%;
-  margin-top:2%;
+  width:50%;
+  margin-top:10%;
   margin-left:10%;
   margin-bottom:2%;
  
