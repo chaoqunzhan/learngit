@@ -148,7 +148,7 @@ function sidebar_frist(){
             '<ul>'+
                 '<li><a href=\"Sighting.html\">Sighting(2)</a></li>'+
                 '<li><a href=\"Activity.html\">Activity(3)</a></li>'+
-                '<li><a href=\"Funny.html\">Funny(2)</a></li>'+
+                '<li><a href=\"Funny.html\">Funny(3)</a></li>'+
                 '<li><a href=\"HALA.html\">Hala Madrid(4)</a></li>'+
                 '<li><a href=\"HALA.html\">C.Ronaldo(1)</a></li>'+
                 '<li><a href=\"L.html\">L.A.Lakers(1)</a></li>'+
