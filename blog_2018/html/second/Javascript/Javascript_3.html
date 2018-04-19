@@ -9,19 +9,19 @@
 <script type="text/javascript" src="../../index/js/index.js"></script>
 <script type="text/javascript" src="../../frame/frame.js"></script>
 
-<script type="text/javascript" src="text.js"></script>              <!-- 测试 -->
+<!-- <script type="text/javascript" src="text.js"></script>  -->             <!-- 测试 -->
 
 <style type="text/css">textarea{width:100%;height:350px;}</style>
-<style type="text/css">pre{width:;background-color:#e0e0e0;border-radius:8px;}</style>
+<style type="text/css">pre{width:;background-color:#e0e0e0;border-radius:8px;font-size:1.2vw;}</style>
 </head>
 
 <body id="one">
 
-<script type="text/javascript">text1()</script>           <!-- 测试 -->
+<!-- <script type="text/javascript">text1()</script> -->           <!-- 测试 -->
 
 <script type="text/javascript">second_header()</script>    <!-- 用js的方法集成导航栏 -->
 
-<div id="bonner"><img src="https://raw.githubusercontent.com/chaoqunzhan/learngit/master/blog_2018/images/learning/bonner_js1.gif" alt="" width="100%"></div>
+<div id="bonner"><img src="https://raw.githubusercontent.com/chaoqunzhan/learngit/master/blog_2018/images/learning/bonner_Funny1.gif" alt="" width="100%"></div>
 <div id="main">
     <div class="adress"><p>当前位置:
         <a href="../../index.html">首页</a>>
@@ -69,7 +69,7 @@
             <ul >
                 <li>drawImage(img,x,y)，img指定图像，x和y指定图像在画布Canvas上的坐标。</li>
                 <li>drawImage(img,x,y,width,height)，width和height是指定图像的大小，通过指定该值可以将图像进行缩放和放大</li>
-                <li>drawImage(img,sx,sy,swidth,sheight,x,y,width,height)，使用该方法可以在图像上进行裁剪，并将裁剪的区域显示在指定的位置。其中sx和sy指定裁剪区域的起始坐标，该坐标是相对于图片的，不是画布。swidth和sheight是裁剪区域的大小。</li>
+                <li>drawImage(img,sx,sy,sw,sh,x,y,w,h)，使用该方法可以在图像上进行裁剪，并将裁剪的区域显示在指定的位置。其中sx和sy指定裁剪区域的起始坐标，该坐标是相对于图片的，不是画布。sw和sh是裁剪区域的大小。</li>
             </ul>   
         </div>
         <p>4、http状态码，这实在是记不住，太多了，常见的有：</p>
@@ -81,11 +81,78 @@
                 <li>500：内部服务器错误</li>
             </ul>   
         </div>
+        <p>5、关于HTML中localStorage储存问题：</p>
+        <div style="width:90%;margin-left:10%">
+            <div>在html5中的Web Storage包括了两种存储方式：sessionStorage和localStorage。sessionStorage不是一种持久化的本地存储，只是会话级别的存储。而localStorage用于持久化的本地存储，除非主动删除数据，否则数据是永远不会过期的。
+            </div>
+            <ul >
+                <li>localStorage.setItem("name","value"):存储变量名为name，值为value的变量</li>
+                <li>localStorage.getItem("name"):获取存储的变量name的值</li>
+                <li>localStorage.removeItem("name"):删除变量名为name的存储变量</li>   
+            </ul>   
+        </div>
+        <p>6、js中的正则表达式：内容太多，自己也没搞懂，以后再做总结。。。</p>
+        <p>7、js中undefined与null的问题，其实还有NaN：</p>
+        <div style="width:90%;margin-left:10%">
+            <ul >
+                <li>undefined：表示未定义类型，就是当声明的标量未初始化时，该标量的默认值就是undefined。</li>
+                <li>null：表示空类型，是一个“什么都没有”的占位符，值undefined实际上是null派生出来的，所以在js中它们是相等的。
+<pre>  alert(null==undefined);      //返回的值是ture</pre>
+                尽管两个值相等，但是含义不一样，undefined是声明了变量但没有赋值，而null是给变量赋了一个空值。</li>
+                <li>NaN：是number中的一个比较特殊的值，表示非数（Not a Number）。
+<pre>typeof(NaN);    //返回的值是number</pre>
+                </li>
+            </ul>   
+        </div>
+        <p>8、jsnop的工作原理：</p>
+        <div style="width:90%;margin-left:10%">
+            <div>JSONP是一种非正式传输协议，该协议的一个要点就是允许用户传递一个callback或者开始就定义一个回调方法，参数给服务端，然后服务端返回数据时会将这个callback参数作为函数名来包裹住JSON数据，这样客户端就可以随意定制自己的函数来自动处理返回数据了。JSONP和JSON的区别：JSON是一种传输格式，而JSONP呢是一种数据的获取方式。JSONP可以跨域，记住这一点就可以了。
+            </div> 
+        </div>
+        <p>9、js实现继承的方式：</p>
+        <div style="width:90%;margin-left:10%">
+            <div>js中的继承跟java不一样，在java中有类的概念，而js中没有。所以在js中的继承一般是通过对象和对象来实现的，具体的方法可以参考<a href="https://www.cnblogs.com/chenwenhao/p/6980401.html">js中实现继承的六种方法。</a>
+            </div>  
+        </div>
+        <p>10、简单说明map、foreach、filter、every、for的遍历方式：</p>
+        <div style="width:90%;margin-left:10%">
+            <ul >
+                <li>map:map()方法会迭代数组中的每一个元素，并根据回调函数来处理每一个元素，最后返回一个新数组。但是，这个方法不会改变原始数组。
+<pre>    var ary = [1,2,3,4];
+    var res = ary.map(function (item,index,input) {
+        return item*10;
+    })
+    console.log(res);   //运行结果[10,20,30,40];
+    console.log(ary);   //运行结果[1,2,3,4]；
+</pre>
+                </li>
+                <li>foreach:foreach()和map()一样也是遍历数组中每一个元素，不同的是foreach是没有返回值的,而且会对原数组产生影响。
+<pre>    var ary = [1,2,3,4];
+    var res = ary.foreach(function (item,index,input) {
+        return item*10;
+    })
+    console.log(res);   //运行结果undefined;
+    console.log(ary);   //运行结果[10,20,30,40]；
+</pre>
+                </li>
+                <li>filter:在本文的而第一题中已经有介绍。</li>  
+                <li>for:</li>
+                <li>every:every(ck)每个数组元素都执行一次ck函数，直到某个元素执行函数ck返回false,则直接返回false,如果全部返回true，则返回true。
+<pre>    var ary=[1,2,3,4];
+    var res=ary.every(function(item,index,input){
+        return item<3;
+    })  //返回结果flase
+
+</pre>
+                </li> 
+            </ul>   
+        </div>
+        <p>11、最后的两道题是编程题，一题是实现当前时间的显示，一题是实现防抖和节流的问题。</p>
     </div>
 
     <div class="prec-next"><p><!-- 上一篇:
     <a href="">xxx</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->上一篇:
-    <a href="calculate.html">出生到现在的天数</a>
+    <a href="Javascript_2.html">jQuery图片自动轮播效果</a>
     </p></div>
 </div>    
 <div id="sidebar">

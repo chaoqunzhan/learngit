@@ -159,7 +159,7 @@ function sidebar_frist(){
                 '<li><a href=\"L.html\">L.A.Lakers(1)</a></li>'+
                 '<li><a href=\"HTML.html\">HTML(3)</a></li>'+
                 '<li><a href=\"HTML.html\">CSS(3)</a></li>'+
-                '<li><a href=\"Javascript.html\">Javascript(2)</a></li>'+
+                '<li><a href=\"Javascript.html\">Javascript(3)</a></li>'+
                 '<li><a href=\"Photoshop.html\">Photoshop(2)</a></li>'+
                 '<li><a href=\"Photoshop.html\">After Effect(0)</a></li>'+
                 '<li><a href=\"NMR.html\">NMR(0)</a></li>'+
@@ -169,6 +169,7 @@ function sidebar_frist(){
 
         '<div id=\"new\">'+
             '<h3>最近更新</h3>'+
+            '<li><a href=\"second/Javascript/Javascript_3.html\">美图前端笔试总结</a></li>'+
             '<li><a href=\"second/Javascript/Javascript_2.html\">jQuery图片自动轮播效果</a></li>'+
             '<li><a href=\"second/HTML+CSS/HTML+CSS_3.html\">关于网页中插入视频的问题</a></li>'+
             '<li><a href=\"second/L/L_1.html\">锅壳——从CCTV5到CCTV6的男人</a></li>'+
@@ -201,7 +202,8 @@ function sidebar_second(){
         '<div id=\"hot\">'+
             '<h3>热门文章</h3>'+
             '<ol>'+
-            '<li><a href=\"second/HTML+CSS/HTML+CSS_3.html\">关于网页中插入视频的问题</a></li>'+
+            '<li><a href=\"../Javascript/Javascript_3.html\">美图前端笔试总结</a></li>'+
+            '<li><a href=\"../HTML+CSS/HTML+CSS_3.html\">关于网页中插入视频的问题</a></li>'+
             '<li><a href=\"../Funny/Funny_2.html\">回首17，步入18</a></li>'+
             '<li><a href=\"../HTML+CSS/HTML+CSS_2.html\">PHP+MySQL留言板</a></li>'+
             '</ol>'+

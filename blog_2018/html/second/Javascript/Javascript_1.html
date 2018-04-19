@@ -15,153 +15,90 @@
 
 <script type="text/javascript">second_header()</script>    <!-- 用js的方法集成导航栏 -->
 
-<div id="bonner"><img src="https://raw.githubusercontent.com/chaoqunzhan/learngit/master/blog_2018/images/learning/bonner_learning.jpg" alt="" width="100%"></div>
+<div id="bonner"><img src="https://raw.githubusercontent.com/chaoqunzhan/learngit/master/blog_2018/images/learning/bonner_Funny1.gif" alt="" width="100%"></div>
 <div id="main">
     <div class="adress"><p>当前位置:
         <a href="../../index.html">首页</a>>
-        <a href="../../HTML+CSS.html">HTML+CSS</a>></p></div>
+        <a href="../../Javascript.html">Javascript</a>></p></div>
     <div class="main-title">
-        <h1> HTML+css+js导航栏</h1>
-        <p>时间:2017-11-22&nbsp;&nbsp;作者:小提群</p>
+        <h1>美图实习笔试总结</h1>
+        <p>时间:2018-04-14&nbsp;&nbsp;作者:小提群</p>
     </div>
     <div class="content">
-        <p> 一个简单的网页下拉导航栏制作，主要用到HTML和css还有几句js代码。其实这个效果完全可以不用到js的，只不过代码会比较复杂。用js可以起到简化代码的作用</p>
-        <h4>第一部分，HTML代码(daohanglan.html)</h4>
-        <textarea class="tu2" readonly="readonly">
-            <!DOCTYPE html PUBLIC>
-            <html>
-            <head>
-            <meta charset="utf-8">
-            <meta http-equiv="Content-Type" content="text/html; charset=gb2312"/> 
-            <script type="text/javascript" src="xiala.js"></script>
-            <link rel="stylesheet" href="style.css" type="text/css">
-            <title>下拉菜单特效</title>
-            </head>
-            <body>
-            <ul id="nav">
-                <li><a>菜单项A</a>
-                    <ul>
-                        <li><a href="菜单页面的地址">菜单项A1</a></li>
-                        <li><a href="菜单页面的地址">菜单项A2</a></li>
-                        <li><a href="菜单页面的地址">菜单项A3</a></li>
-                        <li><a href="菜单页面的地址">菜单项A4</a></li>
-                    </ul>
+        <p>原本还以为，前端的试题应该会是HTML+CSS+js的试题，想不到美图的笔试题竟然几乎全是js，有的题目实在是没见过，下面就做个简单的总结，学习学习。体型记得是：选择题（10*4分）+简答题（3*10分）+编程题（2*15分），好像有点出入，忘记了，大概吧！</p>
+        <h4>选择题：</h4>
+        <p>1、有关数组的题目，slice()、filter()、concat()、reverse(),哪个操作会改变原数组？</p>
+        <div style="width:90%;margin-left:10%">
+            <ul >
+                <li>slice():返回截取的新数组，slice（start,end）中的两个参数分别是start：起始位置和end：结束位置。只传递一个参数，默认为其实位置参数，截取到数组末尾。传递的参数有负数，就加上数组长度确认，如：数组长度4，slice(-3,-1)=slice(1,3)</li>
+                <li>filter():返回筛选数组，对数组的每一项都运行，返回结果为ture的元素组成心数组。
+<pre>
+    var words=[12,3,4,33,56];
+    var words_filter=words.filter(function(word){
+        return word>10;
+    });       //运行结果：words_filter=[12,33,56]
+</pre>
                 </li>
-
-                <li><a>菜单项B</a>
-                    <ul>
-                        <li><a href="菜单页面的地址">菜单项B1</a></li>
-                        <li><a href="菜单页面的地址">菜单项B2</a></li>
-                        <li><a href="菜单页面的地址">菜单项B3</a></li>
-                        <li><a href="菜单页面的地址">菜单项B4</a></li>
-                    </ul>
-                </li>
-
-                <li><a>菜单项C</a>
-                    <ul>
-                        <li><a href="菜单页面的地址">菜单项C1</a></li>
-                        <li><a href="菜单页面的地址">菜单项C2</a></li>
-                        <li><a href="菜单页面的地址">菜单项C3</a></li>
-                        <li><a href="菜单页面的地址">菜单项C4</a></li>
-                    </ul>
-                </li>
-
-                <li><a>菜单项D</a>
-                    <ul>
-                        <li><a href="菜单页面的地址">菜单项D1</a></li>
-                        <li><a href="菜单页面的地址">菜单项D2</a></li>
-                        <li><a href="菜单页面的地址">菜单项D3</a></li>
-                        <li><a href="菜单页面的地址">菜单项D4</a></li>
-                    </ul>
+                <li>concat():返回合并数组，就是合并两个数组</li>
+                <li>reserve():反转数组的方向，操作原数组，返回新数组
+<pre>
+    var words=[1,2,3,4,5,6];
+    var words_re=words.reserve();       
+    //运行结果：words_filter=[12,33,56]
+</pre> 
                 </li>
             </ul>
+        <p>有关数组的知识点可以参考<a href="http://mp.weixin.qq.com/s/1uS73h2w-wQMi61c3JPDNA">前端早读课</a></p>
+        </div>
+        <p>2、关于移动端事件touchstart、touchmove、touchend</p>
+        <div style="width:90%;margin-left:10%">
+            <ul >
+                <li>touchstart:当手指触摸屏幕时候触发，即使已经有一个手指放在屏幕上也会触发。</li>
+                <li>touchmove:当手指在屏幕上滑动的时候连续地触发。在这个事件发生期间，调用preventDefault()事件可以阻止滚动。</li>
+                <li>touchend:当手指从屏幕上离开的时候触发。</li>
+            </ul>   
+        </div>
+        <p>3、关于canvas中的drawImage()的三种不同的使用方法：</p>
+        <div style="width:90%;margin-left:10%">
+            <ul >
+                <li>drawImage(img,x,y)，img指定图像，x和y指定图像在画布Canvas上的坐标。</li>
+                <li>drawImage(img,x,y,width,height)，width和height是指定图像的大小，通过指定该值可以将图像进行缩放和放大</li>
+                <li>drawImage(img,sx,sy,swidth,sheight,x,y,width,height)，使用该方法可以在图像上进行裁剪，并将裁剪的区域显示在指定的位置。其中sx和sy指定裁剪区域的起始坐标，该坐标是相对于图片的，不是画布。swidth和sheight是裁剪区域的大小。</li>
+            </ul>   
+        </div>
+        <p>4、http状态码，这实在是记不住，太多了，常见的有：</p>
+        <div style="width:90%;margin-left:10%">
+            <ul >
+                <li>200：请求成功</li>
+                <li>301：资源（网页等）被永久转移到其它URL</li>
+                <li>404：请求的资源（网页等）不存在</li>
+                <li>500：内部服务器错误</li>
+            </ul>   
+        </div>
+        <p>5、关于HTML中localStorage储存问题：</p>
+        <div style="width:90%;margin-left:10%">
+            <div>在html5中的Web Storage包括了两种存储方式：sessionStorage和localStorage。sessionStorage不是一种持久化的本地存储，只是会话级别的存储。而localStorage用于持久化的本地存储，除非主动删除数据，否则数据是永远不会过期的。
+            </div>
+            <ul >
+                <li>localStorage.setItem("name","value"):存储变量名为name，值为value的变量</li>
+                <li>localStorage.getItem("name"):获取存储的变量name的值</li>
+                <li>localStorage.removeItem("name"):删除变量名为name的存储变量</li>   
+            </ul>   
+        </div>
+        <p>6、js中的正则表达式：内容太多，自己也没搞懂，以后再做总结</p>
+        <p>7、js中undefined与null的问题，其实还有NaN：</p>
+        <div style="width:90%;margin-left:10%">
+            <ul >
+                <li>undefined：表示未定义类型，就是当声明的标量未初始化时，该标量的默认值就是undefined。</li>
+                <li>null：表示空类型，是一个“什么都没有”的占位符，值undefined实际上是null派生出来的，所以在js中它们是相等的。
+<pre>  alert(null==undefined);      //返回的值是ture</pre>
+                尽管两个值相等，但是含义不一样，undefined是声明了变量但没有赋值，而null是给变量赋了一个空值。</li>
+                <li>NaN：是number中的一个比较特殊的值，表示非数（Not a Number）。
+<pre>typeof(NaN);    //返回的值是number</pre>
+                </li>
+            </ul>   
+        </div>
 
-            </body>
-            </html>
-        </textarea>
-        
-        <p>HTML的部分主要用在表格的建立和导航栏的排版</p>
-        <h4>第二部分，css样式表（style.css）:</h4>
-        <textarea  class="tu2" readonly="readonly">                       
-            *{
-                margin:0;padding:0;
-            }
-
-            body{
-                font-size:12px;
-            }
-
-            a{
-                display: block;
-                color:#666;
-                width:80px;
-                text-align:center;
-                text-decoration: none;
-            }
-
-            a:hover {
-                color:#FFF;
-                background:#43a4fd;
-            }
-
-
-            /*主菜单样式*/
-            #nav{
-                line-height:24px;
-                list-style-type:none;
-                background:#666;
-                margin:100px 100px;
-
-            }
-
-            #nav li{
-                float:left;
-                width:80px;
-                background:#CCC;
-                border:1px solid #FFF;
-             -webkit-box-shadow: 3px 3px 5px #ced9e3; //设置背景阴影
-              -moz-box-shadow: 3px 3px 5px #ced9e3;
-            }
-
-            #nav li ul{
-                line-height:24px;
-                position:absolute;
-                left:-1000px;                //把ul的起始位置设为-1000，
-                list-style-type:none;   //用于开始鼠标没经过的时，隐藏子目录
-                text-align:left;
-                width:80px;
-            }
-
-            #nav li ul li{
-                background:#bfdffd;
-            }
-
-            #nav li ul li a{
-                width:80px;
-                text-align:center;
-                padding-left:0px;
-            }
-            #nav li.mouseover ul{
-                left:auto;          //当鼠标经过时，把ul设为正常值，显示子目录
-            }
-        </textarea> 
-
-        <p>css样式才是本文的重点，主要用于导航栏的效果设计，包括大小、位置、背景、阴影还有做到的隐藏和展示等。</p>
-        <h4>第三部分，js脚本的应用（xiaka.js）</h4>
-        <textarea class="tu3" readonly="readonly">
-            function makemune(){
-                var items = document.getElementById("nav").getElementsByTagName("li"); /*获取HTML中所有的二级li标签*/  
-                    for (var i=0; i<items.length; i++) {                  
-                        items[i].onmouseover=function() {          /*采用for循环的方式给li标签添加鼠标经过时的样式表*/
-                        this.className="mouseover"; 
-                        } 
-                        items[i].onmouseout=function() { 
-                        this.className=""; 
-                        } 
-                }
-            }
-            window.onload=makemune;      /*当进入网页时，自动执行makemune函数*/
-        </textarea>
     </div>
     <div class="prec-next"><p><!-- 上一篇:
     <a href="">xxx</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->下一篇:
