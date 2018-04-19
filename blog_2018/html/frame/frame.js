@@ -143,6 +143,11 @@ function bottom(){
 // 首页中sidebar中的tag-new-video更新  2018-03-02
 function sidebar_frist(){
     document.write(
+        // '<div id=\"search\">'+
+        '<script type=\"text/javascript\">(function(){document.write(unescape(\'%3Cdiv id=\"bdcs\"%3E%3C/div%3E\'));var bdcs = document.createElement(\'script\');bdcs.type = \'text/javascript\';bdcs.async = true;bdcs.src = \'http://znsv.baidu.com/customer_search/api/js?sid=18342302393713381465\' + \'&plate_url=\' + encodeURIComponent(window.location.href) + \'&t=\' + Math.ceil(new Date()/3600000);var s = document.getElementsByTagName(\'script\')[0];s.parentNode.insertBefore(bdcs, s);})();</script>'+
+        // '<div>'+
+
+
         '<div id=\"tag\">'+
             '<h3>标签列表</h3>'+
             '<ul>'+

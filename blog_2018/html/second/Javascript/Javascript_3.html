@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC>
+<head>
+<meta content="width=device-width,user-scalable=yes" name="viewport"> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>美图前端笔试总结</title>
+<link href="../../index/index.css"  rel="stylesheet" type="text/css" />
+<link href="../second.css"  rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../index/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../index/js/index.js"></script>
+<script type="text/javascript" src="../../frame/frame.js"></script>
+
+<script type="text/javascript" src="text.js"></script>              <!-- 测试 -->
+
+<style type="text/css">textarea{width:100%;height:350px;}</style>
+<style type="text/css">pre{width:;background-color:#e0e0e0;border-radius:8px;}</style>
+</head>
+
+<body id="one">
+
+<script type="text/javascript">text1()</script>           <!-- 测试 -->
+
+<script type="text/javascript">second_header()</script>    <!-- 用js的方法集成导航栏 -->
+
+<div id="bonner"><img src="https://raw.githubusercontent.com/chaoqunzhan/learngit/master/blog_2018/images/learning/bonner_learning.jpg" alt="" width="100%"></div>
+<div id="main">
+    <div class="adress"><p>当前位置:
+        <a href="../../index.html">首页</a>>
+        <a href="../../Javascript.html">Javascript</a>></p></div>
+    <div class="main-title">
+        <h1>美图实习笔试总结</h1>
+        <p>时间:2018-04-14&nbsp;&nbsp;作者:小提群</p>
+    </div>
+    <div class="content">
+        <p>原本还以为，前端的试题应该会是HTML+CSS+js的试题，想不到美图的笔试题竟然几乎全是js，有的题目实在是没见过，下面就做个简单的总结，学习学习。体型记得是：选择题（10*4分）+简答题（3*10分）+编程题（2*15分），好像有点出入，忘记了，大概吧！</p>
+        <h4>选择题：</h4>
+        <p>1、有关数组的题目，slice()、filter()、concat()、reverse(),哪个操作会改变原数组？</p>
+        <div style="width:90%;margin-left:10%">
+            <ul >
+                <li>slice():返回截取的新数组，slice（start,end）中的两个参数分别是start：起始位置和end：结束位置。只传递一个参数，默认为其实位置参数，截取到数组末尾。传递的参数有负数，就加上数组长度确认，如：数组长度4，slice(-3,-1)=slice(1,3)</li>
+                <li>filter():返回筛选数组，对数组的每一项都运行，返回结果为ture的元素组成心数组。
+<pre>
+    var words=[12,3,4,33,56];
+    var words_filter=words.filter(function(word){
+        return word>10;
+    });       //运行结果：words_filter=[12,33,56]
+</pre>
+                </li>
+                <li>concat():返回合并数组，就是合并两个数组</li>
+                <li>reserve():反转数组的方向，操作原数组，返回新数组
+<pre>
+    var words=[1,2,3,4,5,6];
+    var words_re=words.reserve();       
+    //运行结果：words_filter=[12,33,56]
+</pre> 
+                </li>
+            </ul>
+        <p>有关数组的知识点可以参考<a href="http://mp.weixin.qq.com/s/1uS73h2w-wQMi61c3JPDNA">前端早读课</a></p>
+        </div>
+        <p>2、关于移动端事件touchstart、touchmove、touchend</p>
+        <div style="width:90%;margin-left:10%">
+            <ul >
+                <li>touchstart:当手指触摸屏幕时候触发，即使已经有一个手指放在屏幕上也会触发。</li>
+                <li>touchmove:当手指在屏幕上滑动的时候连续地触发。在这个事件发生期间，调用preventDefault()事件可以阻止滚动。</li>
+                <li>touchend:当手指从屏幕上离开的时候触发。</li>
+            </ul>   
+        </div>
+        <p>3、关于canvas中的drawImage()的三种不同的使用方法：</p>
+        <div style="width:90%;margin-left:10%">
+            <ul >
+                <li>drawImage(img,x,y)，img指定图像，x和y指定图像在画布Canvas上的坐标。</li>
+                <li>drawImage(img,x,y,width,height)，width和height是指定图像的大小，通过指定该值可以将图像进行缩放和放大</li>
+                <li>drawImage(img,sx,sy,swidth,sheight,x,y,width,height)，使用该方法可以在图像上进行裁剪，并将裁剪的区域显示在指定的位置。其中sx和sy指定裁剪区域的起始坐标，该坐标是相对于图片的，不是画布。swidth和sheight是裁剪区域的大小。</li>
+            </ul>   
+        </div>
+        <p>4、http状态码，这实在是记不住，太多了，常见的有：</p>
+        <div style="width:90%;margin-left:10%">
+            <ul >
+                <li>200：请求成功</li>
+                <li>301：资源（网页等）被永久转移到其它URL</li>
+                <li>404：请求的资源（网页等）不存在</li>
+                <li>500：内部服务器错误</li>
+            </ul>   
+        </div>
+    </div>
+
+    <div class="prec-next"><p><!-- 上一篇:
+    <a href="">xxx</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->上一篇:
+    <a href="calculate.html">出生到现在的天数</a>
+    </p></div>
+</div>    
+<div id="sidebar">
+    <div id="about-me">
+        <h3>关于作者</h3>
+        <div id="writer">
+            <div class="log"><img src="https://raw.githubusercontent.com/chaoqunzhan/learngit/master/blog_2018/images/index/%E7%AD%BE%E5%90%8D1.jpg" alt="" width="100%"></div>
+            <h4><a href="../../about.html">小提群</a></h4>
+            <h5><img src="https://raw.githubusercontent.com/chaoqunzhan/learngit/master/blog_2018/images/index/address.png" alt="" width="15px">厦门</h5>
+            <p>小时候喜欢简易的图形组合，后来喜欢上了PS的照片合成,现在在网页上堆砌图形和文字，可以说有个兴趣从未改变！</p>
+        </div>
+    </div>
+    <script type="text/javascript">sidebar_second()</script>
+    <div id="weibo">
+        <h3>微博关注</h3>
+        <div class="img-weibo"><img src="https://raw.githubusercontent.com/chaoqunzhan/learngit/master/html/images/weibo.gif" alt="" width="96%"></div>
+    </div>
+</div>
+
+<!-- 底部HTML代码写入 -->
+<script type="text/javascript">bottom()</script>

@@ -120,6 +120,12 @@
 	text-decoration:none;
 }
 
+#search{
+	margin-top:10%;
+	width:100%;
+	float: left;
+	/*border:1px solid #3ef;*/
+}
 
 #new{
 	/*border:1px solid #457;*/
@@ -265,7 +271,8 @@
 .list-cut{
 	width:100%;
 	margin-top:3%;
-	border:1px solid #ccc;
+	border:0.5px solid #ccc;
+
 	float:left;
 }
 
