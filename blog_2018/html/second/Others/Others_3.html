@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC>
+<head>
+<meta content="width=device-width,user-scalable=yes" name="viewport"> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>校园网打不开微博的问题</title>
+<link href="../../index/index.css"  rel="stylesheet" type="text/css" />
+<link href="../second.css"  rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../index/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../index/js/index.js"></script>
+<script type="text/javascript" src="../../frame/frame.js"></script>
+<style type="text/css">textarea{width:100%;height:350px;}</style>
+</head>
+
+<body id="one">
+
+<script type="text/javascript">second_header()</script>    <!-- 用js的方法集成导航栏 -->
+
+<div id="bonner"><img src="https://raw.githubusercontent.com/chaoqunzhan/learngit/master/blog_2018/images/learning/bonner_learning.jpg" alt="" width="100%"></div>
+<div id="main">
+    <div class="adress"><p>当前位置:
+        <a href="../../index.html">首页</a>>
+        <a href="../../Others.html">Others</a>></p></div>
+    <div class="main-title">
+        <h1>修改DSN解决校园网屏蔽微博的问题</h1>
+        <p>时间:2018-05-04&nbsp;&nbsp;作者:小提群</p>
+    </div>
+    <div class="content">
+        <p>最近经常出现使用校园网的时候，微博打不开或者打开了看不了视频，这对于一个无聊青年是多大的为难啊！毕竟在办公室唯一的放松方式就是刷微博，下面就简单介绍一种通过修改网络DNS的解决方法：</p>
+        <h4>步骤如下：</h4>
+        <p>第一步：在桌面右下角找到【网络和internet设置】，并打开。</p>
+        <img src="https://raw.githubusercontent.com/chaoqunzhan/learngit/master/blog_2018/images/others/other4/other4a.JPG" alt="">
+        <p>第二步：找到你连接的网络，如下面的【本地连接-网络8】，右击打开【属性】。</p> 
+        <img src="https://raw.githubusercontent.com/chaoqunzhan/learngit/master/blog_2018/images/others/other4/other4b.JPG" alt=""> 
+        <p>第三步：在打开的【连接属性】中，找到【Internet协议版本4(TCP/IPv4)】,打开属性。</p>
+        <img src="https://raw.githubusercontent.com/chaoqunzhan/learngit/master/blog_2018/images/others/other4/other4c.JPG" alt=""> 
+        <p>第四步：在相应的位置输入DNS,包括首选DNS和备用DNS。
+            <div style="text-indent:10%">
+                <li>即 首选DNS：8.8.8.8 </li>
+                <li>备用DNS：4.4.4.4 </li>
+                <li>或 首选DNS：114.14.114.114 </li>
+                <li>备用DNS：114.114.115.115 </li>
+            </div>
+        </p>
+
+        <img src="https://raw.githubusercontent.com/chaoqunzhan/learngit/master/blog_2018/images/others/other4/other4d.JPG" alt=""> 
+        <p>第五步：完成设置，可以开开心心地刷微博了！</p>
+        <p>欢迎大家评论交流。。。</p>
+    </div>
+    <div class="prec-next"><p><!-- 上一篇:
+    <a href="">xxx</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->上一篇:
+    <a href="Others_2.html">Win10的813错误</a>
+    </p></div>
+    
+    <!--PC和WAP自适应版-留言板-->
+    <div id="SOHUCS"></div> 
+    <script type="text/javascript"> 
+    (function(){ 
+    var appid = 'cytv9w9eO'; 
+    var conf = 'prod_ed06d70f09a14745bf92858b870eb269'; 
+    var width = window.innerWidth || document.documentElement.clientWidth; 
+    if (width < 960) { 
+    window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("http://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); </script>
+
+</div>    
+<div id="sidebar">
+    <div id="about-me">
+        <h3>关于作者</h3>
+        <div id="writer">
+            <div class="log"><img src="https://raw.githubusercontent.com/chaoqunzhan/learngit/master/blog_2018/images/index/%E7%AD%BE%E5%90%8D1.jpg" alt="" width="100%"></div>
+            <h4><a href="../../about.html">小提群</a></h4>
+            <h5><img src="https://raw.githubusercontent.com/chaoqunzhan/learngit/master/blog_2018/images/index/address.png" alt="" width="15px">厦门</h5>
+            <p>小时候喜欢简易的图形组合，后来喜欢上了PS的照片合成,现在在网页上堆砌图形和文字，可以说有个兴趣从未改变！</p>
+        </div>
+    </div>
+    <script type="text/javascript">sidebar_second()</script>
+    <div id="weibo">
+        <h3>微博关注</h3>
+        <div class="img-weibo"><img src="https://raw.githubusercontent.com/chaoqunzhan/learngit/master/html/images/weibo.gif" alt="" width="96%"></div>
+    </div>
+</div>
+
+<!-- 底部HTML代码写入 -->
+<script type="text/javascript">bottom()</script>

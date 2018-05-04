@@ -163,7 +163,7 @@ function sidebar_frist(){
                 '<li><a href=\"Photoshop.html\">Photoshop(2)</a></li>'+
                 '<li><a href=\"Photoshop.html\">After Effect(0)</a></li>'+
                 '<li><a href=\"NMR.html\">NMR(0)</a></li>'+
-                '<li><a href=\"Others.html\">Others(2)</a></li>'+
+                '<li><a href=\"Others.html\">Others(3)</a></li>'+
             '</ul>'+
         '</div>'+
 
