@@ -1,0 +1,268 @@
+<!DOCTYPE html PUBLIC>
+<head>
+<meta content="width=device-width,user-scalable=yes" name="viewport"> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jq网页小游戏</title>
+<link href="../../index/index.css"  rel="stylesheet" type="text/css" />
+<link href="../second.css"  rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../index/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../index/js/index.js"></script>
+<script type="text/javascript" src="../../frame/frame.js"></script>
+
+<!-- <script type="text/javascript" src="text.js"></script>  -->             <!-- 测试 -->
+
+<style type="text/css">textarea{width:90%;height:350px;}</style>
+<style type="text/css">pre{width:;background-color:#e0e0e0;border-radius:8px;font-size:1.2vw;}</style>
+</head>
+
+<body id="one">
+
+<!-- <script type="text/javascript">text1()</script> -->           <!-- 测试 -->
+
+<script type="text/javascript">second_header()</script>    <!-- 用js的方法集成导航栏 -->
+
+<div id="bonner"><img src="https://raw.githubusercontent.com/chaoqunzhan/learngit/master/blog_2018/images/learning/bonner_Funny1.gif" alt="" width="100%"></div>
+<div id="main">
+    <div class="adress"><p>当前位置:
+        <a href="../../index.html">首页</a>>
+        <a href="../../Javascript.html">Javascript</a>></p></div>
+    <div class="main-title">
+        <h1>英雄难过棍子关——jq网页小游戏</h1>
+        <p>时间:2018-05-25&nbsp;&nbsp;作者:小提群</p>
+    </div>
+    <div class="content">
+        <p>话不多说，直接上代码</p>
+        <p>1、hero.html</p>
+
+    <pre>
+    <textarea name="" id="" cols="30" rows="10">
+    <head>
+        <meta charset="UTF-8">
+        <title>hero</title>
+        <link rel="stylesheet" href="hero.css" type="text/css">
+        <script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="hero.js" ></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="contral">
+                <div class="list">关卡一</div>
+                <div class="mune"><a href="index.html">爱玩电科郎-网页小游戏</a></div>
+                <button>click</button>
+            </div>
+            <div class="show-box">
+                <div class="men-bang">
+                    <div class="men"></div>
+                    <div class="bang"></div>
+                </div>
+                <div class="well-box">
+                    <script type="text/javascript">pillar()</script>
+                </div>
+            </div>
+        </div>
+    </body>
+    </textarea> 
+    </pre>
+        <p>html代码应该是没有技术含量的，不过还是得贴出来，毕竟css和js都是与之对应的。</p>
+        <p>2、hero.css</p>
+<pre>
+@charset "UTF-8";
+.container{
+    width:1000px;
+    height:600px;
+    border:1px solid #808080;
+    margin:0 auto;
+    background:url("background.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    overflow:hidden;
+}
+.contral{
+    z-index:1;
+    position:absolute;
+    /*background-color:#256;*/
+}
+.list{
+    float:left;
+    margin:50px 0 0 500px;
+    background-color:#4eacff;
+    padding:2px 10px 2px 10px;
+    border-radius:8px;
+}
+.mune{
+    float:left;
+    margin:50px 0 0 50px;
+    background-color:#808080;
+    padding:2px 10px 2px 10px;
+    border-radius:8px;
+}
+button{
+    background-color:#d5f2fb;
+    clear:left;
+    width:50px;
+    height:50px;
+    line-height:50px;
+    border-radius:50%;
+    margin:150px 0 0 800px;
+}
+.show-box{
+    position:relative;
+    float:left;
+    width:1000px;
+    height:600px;
+    /*border:1px solid #234;*/
+    /*background-color:#285;*/
+    /*opacity:0.2;*/
+}
+.men-bang{
+    width:100%;
+    height:400px;
+    /*background-color:#678;*/
+}
+.well-box{
+    width:1000px;
+    position:absolute;
+    height:200px;
+    /*border:1px solid #789;*/
+   /* background-color:#222;*/
+}
+.well{
+    width:50px;
+    height:200px;
+    float:left;
+    background-color:#564;
+    position:absolute;
+}
+.bang{
+    width:0px;
+    height:1px;
+    background-color:#808;
+    top:400px;
+    position:relative;
+    transform-origin:left;
+    transform:rotate(-90deg);
+}
+.men{
+    width:20px;
+    height:50px;
+    background-color:#765;
+    position:absolute;
+    left:25px;
+    top:350px;
+}
+</pre>
+<p>3、hero.js</p>
+
+<pre>
+function pillar(){
+    var obj=arrayList();
+    var w=obj.w;
+    var sleft=obj.sleft;
+            param='<div class=\"well\" style=\"left:0px;\"></div>';              // 第一根柱子对象
+            param+='<div class=\"well\" style=\"left:'+sleft[0]+'px;\"></div>';  // 第二根柱子对象
+            param+='<div class=\"well\" style=\"left:'+sleft[1]+'px;\"></div>';  // 第三根柱子对象
+            param+='<div class=\"well\" style=\"left:'+sleft[2]+'px;\"></div>';  // 第四根柱子对象     
+    document.write(param);     //随机生成柱子的间隔
+    var i=0;
+    f(w,sleft,i);      //后续的动画
+}
+//随机生成柱子间距
+function arrayList(){  
+    var wh=50; 
+    var w=new Array(3);    //柱子间距
+    var sleft=new Array(3);    //柱子位置设置
+    for(var i=0;i<3;i++){
+        w[i]=parseInt(Math.random()*200)+100;
+        //w[i]=100;
+    }
+    sleft[0]=w[0]+wh;
+    sleft[1]=w[0]+w[1]+wh*2;
+    sleft[2]=w[0]+w[1]+w[2]+wh*3;
+    return {
+        w:w,
+        sleft:sleft
+    };
+}
+function f(w,sleft,i){
+    //棍子的伸长特效
+    if(i==0){
+        bang_sleft=50;
+    }
+    else{
+        bang_sleft=sleft[i-1]+50;
+    }
+    $(".bang").css({"width":"0","left":bang_sleft+"px"});
+    // alert(i)
+
+    $(".bang").css({"transform":"rotate(-90deg)"});      //初始化棍子样式
+     var stop=true;
+    $("button").mousedown(function(){
+        if(stop){
+            var sickH=1000;
+            $(".bang").animate({"width":sickH+"px"},2500)
+        }
+    });
+    //棍子停止变长
+    $("button").mouseup(function(){
+        if(stop){
+            // var sickH=100;
+            $(".bang").stop();
+            stop=false;
+            var bangH=$(".bang").width();    //读出棍子的长度     
+            var t=setTimeout (function(){
+                $(".bang").css({"transform":"rotate(0deg)"})  //棍子倒下
+                //判断是否成功过关
+                if(bangH>=w[i]&&bangH<=w[i]+50){
+                    // alert("succeed");
+                    $(".men").animate({"left":bangH+bang_sleft+"px"},2500,function(){
+                        $(".show-box").animate({"left":-sleft[i]+"px"},1000,function(){
+                            i++;
+                            stop=true;
+                            f(w,sleft,i);
+                            if(i==3){
+                                alert("未完待续。。。")
+                            };
+                        });    
+                    });    //人走，窗口动
+                }
+                else {                   
+                    $(".men").animate({"left":bangH+bang_sleft+"px"},2500,function(){
+                        $(".men").animate({"top":"600px"},1000,function(){
+                            alert("点击刷新，重头再来");
+                        }) 
+                    });    //人掉下去
+                }
+            },500)
+        }    
+    });
+};
+</pre>
+
+<p>查看完整的项目戳：<a href=""></a></p>
+<p>体验游戏请用pc点击<a href="js4/hero.html">我！对！就是我！</a></p>
+    </div>
+
+    <div class="prec-next"><p><!-- 上一篇:
+    <a href="">xxx</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->上一篇:
+    <a href="Javascript_3.html">美图前端笔试总结</a>
+    </p></div>
+</div>    
+<div id="sidebar">
+    <div id="about-me">
+        <h3>关于作者</h3>
+        <div id="writer">
+            <div class="log"><img src="https://raw.githubusercontent.com/chaoqunzhan/learngit/master/blog_2018/images/index/%E7%AD%BE%E5%90%8D1.jpg" alt="" width="100%"></div>
+            <h4><a href="../../about.html">小提群</a></h4>
+            <h5><img src="https://raw.githubusercontent.com/chaoqunzhan/learngit/master/blog_2018/images/index/address.png" alt="" width="15px">厦门</h5>
+            <p>小时候喜欢简易的图形组合，后来喜欢上了PS的照片合成,现在在网页上堆砌图形和文字，可以说有个兴趣从未改变！</p>
+        </div>
+    </div>
+    <script type="text/javascript">sidebar_second()</script>
+    <div id="weibo">
+        <h3>微博关注</h3>
+        <div class="img-weibo"><img src="https://raw.githubusercontent.com/chaoqunzhan/learngit/master/html/images/weibo.gif" alt="" width="96%"></div>
+    </div>
+</div>
+
+<!-- 底部HTML代码写入 -->
+<script type="text/javascript">bottom()</script>
